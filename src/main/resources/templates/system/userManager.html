@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>系统用户管理</title>
+    <link rel="stylesheet" href="/lib/layui/css/layui.css">
+    <link rel="stylesheet" href="/lib/layui/extend/formSelects-v4.css">
+</head>
+<body>
+<div>
+    <form id="srchForm" class="layui-form input">
+        <div class="layui-form-item">
+            <div class="layui-inline">
+                <label for="loginName" class="layui-form-label">登录名</label>
+                <div class="layui-input-inline">
+                    <input type="text" name="loginName_like" autocomplete="off"
+                           id="loginName" class="layui-input">
+                </div>
+                <label for="userName" class="layui-form-label">用户名</label>
+                <div class="layui-input-inline">
+                    <input type="text" name="userName_like" autocomplete="off"
+                           id="userName" class="layui-input">
+                </div>
+                <button lay-submit="" lay-filter="searchBtn"
+                        class="layui-btn layui-btn-sm layui-btn-primary table-action">
+                    <i class="layui-icon layui-icon-search"></i>
+                </button>
+            </div>
+        </div>
+    </form>
+    <table class="layui-hide" id="dataTable" lay-filter="dataTable"></table>
+    <div class="layui-row" id="editDiv" style="display:none;">
+        <div class="layui-col-md10">
+            <form id="editForm" class="layui-form layui-from-pane" lay-filter="editForm" action=""
+                  style="margin-top:20px">
+                <input id="id_txt" name="id" type="hidden"/>
+                <input type="hidden" id="deptId" name="deptId">
+                <div class="layui-form-item"><label class="layui-form-label">登录名</label>
+                    <div class="layui-input-block">
+                        <input type="text" id="loginName_txt" lay-filter="loginName_txt" name="loginName"
+                               lay-verify="required|loginNameCheck" autocomplete="off"
+                               placeholder="请输入登录名" class="layui-input"></div>
+                </div>
+                <div class="layui-form-item"><label class="layui-form-label">用户名</label>
+                    <div class="layui-input-block">
+                        <input type="text" id="userName_txt" name="userName"
+                               lay-verify="required" autocomplete="off"
+                               placeholder="请输入用户名" class="layui-input"></div>
+                </div>
+                <div class="layui-form-item"><label class="layui-form-label">备注</label>
+                    <div class="layui-input-block">
+                        <input type="text" id="remark_txt" name="remark"
+                               autocomplete="off"
+                               placeholder="请输入备注" class="layui-input"></div>
+                </div>
+                <div class="layui-form-item" style="margin-top:40px">
+                    <div class="layui-input-block">
+                        <button class="layui-btn layui-btn-submit " lay-submit="" lay-filter="saveBtn">保存</button>
+                        <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="layui-row" id="editRoleDiv" style="display:none;">
+        <div class="layui-col-md10">
+            <form id="editRoleForm" class="layui-form layui-from-pane" lay-filter="editRoleForm" action=""
+                  style="margin-top:20px">
+                <input id="userId_txt" name="userId" type="hidden"/>
+                <div class="layui-form-item"><label class="layui-form-label">角色</label>
+                    <div class="layui-input-block">
+                        <select name="userRole" xm-select="role-select" lay-verify="required"
+                                xm-select-radio="" lay-vertype="tips">
+                            <option value="">请选择角色</option>
+                        </select></div>
+                </div>
+                <div class="layui-form-item" id="editRoleBtnDiv">
+                    <div class="layui-input-block">
+                        <button class="layui-btn layui-btn-submit " lay-submit="" lay-filter="saveRoleBtn">保存</button>
+                        <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="/js/jquery.min.js" charset="utf-8"></script>
+<script type="text/javascript" src="/js/commonjs.js" charset="utf-8"></script>
+<script src="/lib/layui/layui.js" charset="utf-8"></script>
+<script type="text/html" id="column-toolbar">
+    <button type="button" class="layui-btn layui-btn-xs permissionBtn" lay-event="systemUser_edit">编辑</button>
+    <button type="button" class="layui-btn layui-btn-xs layui-btn-danger permissionBtn" lay-event="systemUser_delete">
+        删除
+    </button>
+    <button type="button" class="layui-btn layui-btn-xs layui-btn-danger permissionBtn" lay-event="systemUser_reset">
+        重置密码
+    </button>
+</script>
+<script type="text/html" id="toolbar">
+    <button type="button" class="layui-btn layui-btn-sm permissionBtn" lay-event="systemUser_add">
+        新增
+    </button>
+</script>
+<script>
+    layui.config({
+        base: '/lib/layui/extend/'
+    }).extend({
+        formSelects: 'formSelects-v4'
+    }).use(['table', 'form', 'jquery', 'formSelects'], function () {
+        var table = layui.table;
+        var form = layui.form;
+        var $ = layui.$;
+        var isSubmit = false;
+        table.render({
+            elem: '#dataTable',
+            url: '/systemUser/findAll/',
+            toolbar: '#toolbar',
+            smartReloadModel: true,
+            minWidth: 50,
+            cols: [
+                [
+                    {field: 'loginName', title: '登录名'},
+                    {field: 'userName', title: '用户名'},
+                    {
+                        field: 'createTime',
+                        title: '注册时间',
+                        width: 150,
+                        templet: "<div>{{layui.util.toDateString(d.createTime, 'yyyy-MM-dd HH:mm:ss')}}</div>"
+                    },
+                    {
+                        field: 'modifyTime',
+                        title: '修改时间',
+                        width: 150,
+                        templet: "<div>{{layui.util.toDateString(d.modifyTime, 'yyyy-MM-dd HH:mm:ss')}}</div>"
+                    },
+                    {field: 'remark', title: '备注'},
+                    {title: '操作', width: 370, fixed: 'right', align: 'center', toolbar: '#column-toolbar'}
+                ]
+            ],
+            page: true,
+            done: function (res, curr, count) {
+                initBtnPermission();
+            }
+        });
+
+
+        // 工具条点击事件
+        table.on('toolbar(dataTable)', function (obj) {
+            var event = obj.event;
+            if (event === 'systemUser_add') {
+                add("添加");
+            } else if (event === 'systemUser_upload') {
+
+            }
+        });
+
+        form.verify({
+            loginNameCheck: function (value, item) { //value：表单的值、item：表单的DOM对象
+                var userId = $("#id_txt").val();
+                var msg;
+                $.ajax({
+                    type: "POST",
+                    url: "/systemUser/checkLoginName",
+                    async: false, //改为同步请求
+                    data: {loginName: value, id: userId},
+                    dataType: 'json',
+                    success: function (result) {
+                        if (result.code != 0) {
+                            msg = "登录名重复";
+                        }
+                    }
+                });
+                return msg;
+            }
+        });
+
+
+        // 行点击事件 重置密码
+        table.on('tool(dataTable)', function (obj) {
+            var data = obj.data;
+            var event = obj.event;
+            if (event === 'systemUser_edit') {
+                form.val("editForm", data); // 给editForm赋值
+                add("编辑");
+            } else if (event === 'systemUser_reset') { //重置密码
+                $.get("/systemUser/resetPassword/" + data.id, function (data, status) {
+                    if (data.code == 0) {
+                        layer.msg('重置成功', {time: 3000, icon: 6});
+                    }
+                });
+            } else if (event === 'systemUser_delete') {
+                del(obj);
+            }
+        });
+        var layerIndex;
+
+        function add(title) {
+            layerIndex = layer.open({ //layer提供了5种层类型。可传入的值有：0（信息框，默认）1（页面层）2（iframe层）3（加载层）4（tips层）
+                type: 1,
+                title: title,
+                area: ['550px', '500px'],
+                content: $("#editDiv"), //引用的弹出层的页面层的方式加载修改界面表单
+                end: function () {
+                    refresh();
+                }
+            });
+        }
+
+        function refresh() {
+            if (isSubmit) {
+                table.reload("dataTable");
+                isSubmit = false;
+            }
+            formSelects.value('authorityCode-select', []);
+            $("#editForm")[0].reset();
+            $("input[type='hidden']").val("");
+        }
+
+        function del(obj) {
+            layer.confirm("确定删除用户吗?", {icon: 3, title: '提示'},
+                function (index) {//确定回调
+                    var id = obj.data.id;
+                    $.get('/systemUser/deleteUser/' + id, function (data) {
+                        layer.close(index);
+                        if (data.code == 0) {
+                            layer.msg('删除成功', {time: 3000, icon: 6});
+                            table.reload("dataTable");
+                        } else
+                            layer.msg('删除失败', {time: 3000, icon: 2});
+                    });
+                }, function (index) {//取消回调
+                    layer.close(index);
+                }
+            );
+        }
+
+        form.on('submit(saveBtn)', function (form) {
+            $.ajax({ // 注：这里必须是$.ajax 不能是$.post,其他页面同
+                url: '/systemUser/save',
+                dataType: 'json',
+                contentType: 'application/json', // 这句是必须的，不然java收不到，而$.post默认参数是application/x-www-form…… 且无法修改
+                type: 'post',
+                data: JSON.stringify(form.field),
+                success: function (data, status) {
+                    if (data.code == 0) {
+                        layer.msg('保存成功', {time: 3000, icon: 6});
+                        layer.close(layerIndex);
+                    } else
+                        layer.msg('保存失败', {icon: 2});
+                },
+                error: function (data, status) {
+                    layer.msg('请求失败', {icon: 2});
+                }
+            });
+            isSubmit = true;
+            return false;  //  这句是必须的 否则会提交两次
+        });
+
+        form.on('submit(searchBtn)', function (form) {
+            table.reload('dataTable', {
+                page: {curr: 1},  // 这句是必须的，重新从第一页开始加载。
+                where: form.field
+            });
+            return false;
+        });
+
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,904 @@
+2020-05-26 08:41:21.828-[main] INFO  com.sdt.dapp.DappApplication - Starting DappApplication on DESKTOP-7NFGT2P with PID 3468 (D:\javaProject\BankCertApp\target\classes started by sdt in D:\javaProject\BankCertApp)
+2020-05-26 08:41:21.828-[main] INFO  com.sdt.dapp.DappApplication - No active profile set, falling back to default profiles: default
+2020-05-26 08:41:22.343-[main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-05-26 08:41:22.390-[main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 47ms. Found 2 repository interfaces.
+2020-05-26 08:41:22.578-[main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$53a52d19] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-26 08:41:22.906-[main] INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port(s): 9092 (http)
+2020-05-26 08:41:22.906-[main] INFO  o.a.c.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9092"]
+2020-05-26 08:41:22.906-[main] INFO  o.a.c.core.StandardService - Starting service [Tomcat]
+2020-05-26 08:41:22.921-[main] INFO  o.a.c.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.16]
+2020-05-26 08:41:22.921-[main] INFO  o.a.c.c.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk-12.0.2\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Java\jdk-12.0.2\\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\IDM Computer Solutions\UltraEdit;C:\Program Files\Git\cmd;C:\Go\bin;C:\MinGW\bin;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;D:\goProject\src\protoc-3.9.0-win64\bin;C:\Program Files\VisualSVN Server\bin;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\MySQL\MySQL Server 5.5\bin;C:\openssl\bin;C:\Users\sdt\AppData\Local\Microsoft\WindowsApps;C:\Program Files\JetBrains\GoLand 2019.1.3\bin;C:\Go\bin;C:\MinGW\bin;C:\Users\sdt\AppData\Local\BypassRuntm;C:\Users\sdt\AppData\Local\Microsoft\WindowsApps;E:\mysql-8.0.19-winx64\bin;C:\Program Files\JetBrains\IntelliJ IDEA 2019.2.3\bin;;;.]
+2020-05-26 08:41:23.031-[main] INFO  o.a.c.c.C.[.[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-05-26 08:41:23.031-[main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1172 ms
+2020-05-26 08:41:23.124-[main] INFO  c.z.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-05-26 08:41:23.202-[main] INFO  c.z.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020-05-26 08:41:23.234-[main] INFO  o.h.j.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-05-26 08:41:23.265-[main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.3.7.Final}
+2020-05-26 08:41:23.265-[main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2020-05-26 08:41:23.359-[main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2020-05-26 08:41:23.546-[main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-05-26 08:41:23.999-[main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-26 08:41:24.343-[main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-26 08:41:24.421-[main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+2020-05-26 08:41:24.483-[main] INFO  o.a.c.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9092"]
+2020-05-26 08:41:24.499-[main] INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat started on port(s): 9092 (http) with context path ''
+2020-05-26 08:41:24.499-[main] INFO  com.sdt.dapp.DappApplication - Started DappApplication in 2.906 seconds (JVM running for 5.028)
+2020-05-26 08:41:41.846-[http-nio-9092-exec-1] INFO  o.a.c.c.C.[.[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-26 08:41:41.847-[http-nio-9092-exec-1] INFO  o.s.w.s.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-05-26 08:41:41.851-[http-nio-9092-exec-1] INFO  o.s.w.s.DispatcherServlet - Completed initialization in 4 ms
+2020-05-26 08:41:47.571-[http-nio-9092-exec-1] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+2020-05-26 09:07:06.340-[Thread-2] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-05-26 09:07:06.340-[Thread-2] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-05-26 09:07:06.340-[Thread-2] INFO  c.z.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2020-05-26 09:07:06.356-[Thread-2] INFO  c.z.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2020-05-26 09:07:09.771-[main] INFO  com.sdt.dapp.DappApplication - Starting DappApplication on DESKTOP-7NFGT2P with PID 8636 (D:\javaProject\BankCertApp\target\classes started by sdt in D:\javaProject\BankCertApp)
+2020-05-26 09:07:09.771-[main] INFO  com.sdt.dapp.DappApplication - No active profile set, falling back to default profiles: default
+2020-05-26 09:07:10.209-[main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-05-26 09:07:10.240-[main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 31ms. Found 2 repository interfaces.
+2020-05-26 09:07:10.428-[main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$74b7bf62] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-26 09:07:10.631-[main] INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port(s): 9092 (http)
+2020-05-26 09:07:10.631-[main] INFO  o.a.c.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9092"]
+2020-05-26 09:07:10.646-[main] INFO  o.a.c.core.StandardService - Starting service [Tomcat]
+2020-05-26 09:07:10.646-[main] INFO  o.a.c.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.16]
+2020-05-26 09:07:10.646-[main] INFO  o.a.c.c.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk-12.0.2\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Java\jdk-12.0.2\\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\IDM Computer Solutions\UltraEdit;C:\Program Files\Git\cmd;C:\Go\bin;C:\MinGW\bin;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;D:\goProject\src\protoc-3.9.0-win64\bin;C:\Program Files\VisualSVN Server\bin;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\MySQL\MySQL Server 5.5\bin;C:\openssl\bin;C:\Users\sdt\AppData\Local\Microsoft\WindowsApps;C:\Program Files\JetBrains\GoLand 2019.1.3\bin;C:\Go\bin;C:\MinGW\bin;C:\Users\sdt\AppData\Local\BypassRuntm;C:\Users\sdt\AppData\Local\Microsoft\WindowsApps;E:\mysql-8.0.19-winx64\bin;C:\Program Files\JetBrains\IntelliJ IDEA 2019.2.3\bin;;;.]
+2020-05-26 09:07:10.771-[main] INFO  o.a.c.c.C.[.[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-05-26 09:07:10.771-[main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 968 ms
+2020-05-26 09:07:10.849-[main] INFO  c.z.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-05-26 09:07:10.912-[main] INFO  c.z.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020-05-26 09:07:10.943-[main] INFO  o.h.j.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-05-26 09:07:10.974-[main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.3.7.Final}
+2020-05-26 09:07:10.974-[main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2020-05-26 09:07:11.052-[main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2020-05-26 09:07:11.115-[main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-05-26 09:07:11.521-[main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-26 09:07:11.818-[main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-26 09:07:11.896-[main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+2020-05-26 09:07:11.958-[main] INFO  o.a.c.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9092"]
+2020-05-26 09:07:11.974-[main] INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat started on port(s): 9092 (http) with context path ''
+2020-05-26 09:07:11.974-[main] INFO  com.sdt.dapp.DappApplication - Started DappApplication in 2.406 seconds (JVM running for 3.104)
+2020-05-26 09:07:42.577-[http-nio-9092-exec-1] INFO  o.a.c.c.C.[.[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-26 09:07:42.578-[http-nio-9092-exec-1] INFO  o.s.w.s.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-05-26 09:07:42.584-[http-nio-9092-exec-1] INFO  o.s.w.s.DispatcherServlet - Completed initialization in 6 ms
+2020-05-26 09:07:47.917-[http-nio-9092-exec-1] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+2020-05-26 09:08:52.232-[Thread-2] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-05-26 09:08:52.232-[Thread-2] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-05-26 09:08:52.232-[Thread-2] INFO  c.z.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2020-05-26 09:08:52.247-[Thread-2] INFO  c.z.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2020-05-26 09:08:55.616-[main] INFO  com.sdt.dapp.DappApplication - Starting DappApplication on DESKTOP-7NFGT2P with PID 3488 (D:\javaProject\BankCertApp\target\classes started by sdt in D:\javaProject\BankCertApp)
+2020-05-26 09:08:55.616-[main] INFO  com.sdt.dapp.DappApplication - No active profile set, falling back to default profiles: default
+2020-05-26 09:08:56.006-[main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-05-26 09:08:56.053-[main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 31ms. Found 2 repository interfaces.
+2020-05-26 09:08:56.256-[main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$5bdb6c16] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-26 09:08:56.444-[main] INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port(s): 9092 (http)
+2020-05-26 09:08:56.459-[main] INFO  o.a.c.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9092"]
+2020-05-26 09:08:56.459-[main] INFO  o.a.c.core.StandardService - Starting service [Tomcat]
+2020-05-26 09:08:56.459-[main] INFO  o.a.c.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.16]
+2020-05-26 09:08:56.459-[main] INFO  o.a.c.c.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk-12.0.2\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Java\jdk-12.0.2\\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\IDM Computer Solutions\UltraEdit;C:\Program Files\Git\cmd;C:\Go\bin;C:\MinGW\bin;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;D:\goProject\src\protoc-3.9.0-win64\bin;C:\Program Files\VisualSVN Server\bin;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\MySQL\MySQL Server 5.5\bin;C:\openssl\bin;C:\Users\sdt\AppData\Local\Microsoft\WindowsApps;C:\Program Files\JetBrains\GoLand 2019.1.3\bin;C:\Go\bin;C:\MinGW\bin;C:\Users\sdt\AppData\Local\BypassRuntm;C:\Users\sdt\AppData\Local\Microsoft\WindowsApps;E:\mysql-8.0.19-winx64\bin;C:\Program Files\JetBrains\IntelliJ IDEA 2019.2.3\bin;;;.]
+2020-05-26 09:08:56.569-[main] INFO  o.a.c.c.C.[.[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-05-26 09:08:56.569-[main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 922 ms
+2020-05-26 09:08:56.662-[main] INFO  c.z.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-05-26 09:08:56.709-[main] INFO  c.z.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020-05-26 09:08:56.740-[main] INFO  o.h.j.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-05-26 09:08:56.772-[main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.3.7.Final}
+2020-05-26 09:08:56.772-[main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2020-05-26 09:08:56.850-[main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2020-05-26 09:08:56.928-[main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-05-26 09:08:57.287-[main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-26 09:08:57.600-[main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-26 09:08:57.693-[main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+2020-05-26 09:08:57.740-[main] INFO  o.a.c.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9092"]
+2020-05-26 09:08:57.756-[main] INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat started on port(s): 9092 (http) with context path ''
+2020-05-26 09:08:57.756-[main] INFO  com.sdt.dapp.DappApplication - Started DappApplication in 2.34 seconds (JVM running for 3.036)
+2020-05-26 09:09:16.829-[Thread-2] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-05-26 09:09:16.829-[Thread-2] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-05-26 09:09:16.829-[Thread-2] INFO  c.z.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2020-05-26 09:09:16.829-[Thread-2] INFO  c.z.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2020-05-26 09:09:18.720-[main] INFO  com.sdt.dapp.DappApplication - Starting DappApplication on DESKTOP-7NFGT2P with PID 9300 (D:\javaProject\BankCertApp\target\classes started by sdt in D:\javaProject\BankCertApp)
+2020-05-26 09:09:18.720-[main] INFO  com.sdt.dapp.DappApplication - No active profile set, falling back to default profiles: default
+2020-05-26 09:09:19.095-[main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-05-26 09:09:19.141-[main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 46ms. Found 2 repository interfaces.
+2020-05-26 09:09:19.313-[main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$5d8bc9fd] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-26 09:09:19.516-[main] INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port(s): 9092 (http)
+2020-05-26 09:09:19.516-[main] INFO  o.a.c.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9092"]
+2020-05-26 09:09:19.532-[main] INFO  o.a.c.core.StandardService - Starting service [Tomcat]
+2020-05-26 09:09:19.532-[main] INFO  o.a.c.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.16]
+2020-05-26 09:09:19.532-[main] INFO  o.a.c.c.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk-12.0.2\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Java\jdk-12.0.2\\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\IDM Computer Solutions\UltraEdit;C:\Program Files\Git\cmd;C:\Go\bin;C:\MinGW\bin;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;D:\goProject\src\protoc-3.9.0-win64\bin;C:\Program Files\VisualSVN Server\bin;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\MySQL\MySQL Server 5.5\bin;C:\openssl\bin;C:\Users\sdt\AppData\Local\Microsoft\WindowsApps;C:\Program Files\JetBrains\GoLand 2019.1.3\bin;C:\Go\bin;C:\MinGW\bin;C:\Users\sdt\AppData\Local\BypassRuntm;C:\Users\sdt\AppData\Local\Microsoft\WindowsApps;E:\mysql-8.0.19-winx64\bin;C:\Program Files\JetBrains\IntelliJ IDEA 2019.2.3\bin;;;.]
+2020-05-26 09:09:19.626-[main] INFO  o.a.c.c.C.[.[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-05-26 09:09:19.626-[main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 891 ms
+2020-05-26 09:09:19.719-[main] INFO  c.z.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-05-26 09:09:19.782-[main] INFO  c.z.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020-05-26 09:09:19.797-[main] INFO  o.h.j.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-05-26 09:09:19.829-[main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.3.7.Final}
+2020-05-26 09:09:19.829-[main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2020-05-26 09:09:19.907-[main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2020-05-26 09:09:19.985-[main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-05-26 09:09:20.313-[main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-26 09:09:20.610-[main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-26 09:09:20.688-[main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+2020-05-26 09:09:20.735-[main] INFO  o.a.c.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9092"]
+2020-05-26 09:09:20.750-[main] INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat started on port(s): 9092 (http) with context path ''
+2020-05-26 09:09:20.766-[main] INFO  com.sdt.dapp.DappApplication - Started DappApplication in 2.25 seconds (JVM running for 3.041)
+2020-05-26 09:09:27.798-[http-nio-9092-exec-1] INFO  o.a.c.c.C.[.[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-26 09:09:27.799-[http-nio-9092-exec-1] INFO  o.s.w.s.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-05-26 09:09:27.804-[http-nio-9092-exec-1] INFO  o.s.w.s.DispatcherServlet - Completed initialization in 5 ms
+2020-05-26 09:09:32.850-[http-nio-9092-exec-1] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+2020-05-26 15:50:39.481-[Thread-2] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-05-26 15:50:39.481-[Thread-2] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-05-26 15:50:39.575-[Thread-2] INFO  c.z.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2020-05-26 15:50:39.606-[Thread-2] INFO  c.z.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2020-05-26 15:50:46.646-[main] INFO  com.sdt.dapp.DappApplication - Starting DappApplication on DESKTOP-7NFGT2P with PID 12128 (D:\javaProject\BankCertApp\target\classes started by sdt in D:\javaProject\BankCertApp)
+2020-05-26 15:50:46.646-[main] INFO  com.sdt.dapp.DappApplication - No active profile set, falling back to default profiles: default
+2020-05-26 15:50:47.282-[main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-05-26 15:50:47.360-[main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 78ms. Found 2 repository interfaces.
+2020-05-26 15:50:47.563-[main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$b2af2b23] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-26 15:50:47.860-[main] INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port(s): 9092 (http)
+2020-05-26 15:50:47.891-[main] INFO  o.a.c.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9092"]
+2020-05-26 15:50:47.891-[main] INFO  o.a.c.core.StandardService - Starting service [Tomcat]
+2020-05-26 15:50:47.891-[main] INFO  o.a.c.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.16]
+2020-05-26 15:50:47.891-[main] INFO  o.a.c.c.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk-12.0.2\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Java\jdk-12.0.2\\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\IDM Computer Solutions\UltraEdit;C:\Program Files\Git\cmd;C:\Go\bin;C:\MinGW\bin;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;D:\goProject\src\protoc-3.9.0-win64\bin;C:\Program Files\VisualSVN Server\bin;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\MySQL\MySQL Server 5.5\bin;C:\openssl\bin;C:\Users\sdt\AppData\Local\Microsoft\WindowsApps;C:\Program Files\JetBrains\GoLand 2019.1.3\bin;C:\Go\bin;C:\MinGW\bin;C:\Users\sdt\AppData\Local\BypassRuntm;C:\Users\sdt\AppData\Local\Microsoft\WindowsApps;E:\mysql-8.0.19-winx64\bin;C:\Program Files\JetBrains\IntelliJ IDEA 2019.2.3\bin;;;.]
+2020-05-26 15:50:48.047-[main] INFO  o.a.c.c.C.[.[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-05-26 15:50:48.047-[main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1386 ms
+2020-05-26 15:50:48.141-[main] INFO  c.z.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-05-26 15:50:48.266-[main] INFO  c.z.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020-05-26 15:50:48.297-[main] INFO  o.h.j.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-05-26 15:50:48.344-[main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.3.7.Final}
+2020-05-26 15:50:48.344-[main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2020-05-26 15:50:48.531-[main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2020-05-26 15:50:48.719-[main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-05-26 15:50:49.859-[main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-26 15:50:50.312-[main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-26 15:50:50.390-[main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+2020-05-26 15:50:50.453-[main] INFO  o.a.c.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9092"]
+2020-05-26 15:50:50.468-[main] INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat started on port(s): 9092 (http) with context path ''
+2020-05-26 15:50:50.500-[main] INFO  com.sdt.dapp.DappApplication - Started DappApplication in 4.086 seconds (JVM running for 5.543)
+2020-05-26 15:51:11.440-[http-nio-9092-exec-1] INFO  o.a.c.c.C.[.[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-26 15:51:11.441-[http-nio-9092-exec-1] INFO  o.s.w.s.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-05-26 15:51:11.445-[http-nio-9092-exec-1] INFO  o.s.w.s.DispatcherServlet - Completed initialization in 4 ms
+2020-05-26 15:51:19.771-[http-nio-9092-exec-1] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+2020-05-26 15:55:58.631-[Thread-2] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-05-26 15:55:58.631-[Thread-2] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-05-26 15:55:58.631-[Thread-2] INFO  c.z.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2020-05-26 15:55:58.631-[Thread-2] INFO  c.z.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2020-05-26 15:56:01.116-[main] INFO  com.sdt.dapp.DappApplication - Starting DappApplication on DESKTOP-7NFGT2P with PID 10664 (D:\javaProject\BankCertApp\target\classes started by sdt in D:\javaProject\BankCertApp)
+2020-05-26 15:56:01.116-[main] INFO  com.sdt.dapp.DappApplication - No active profile set, falling back to default profiles: default
+2020-05-26 15:56:01.582-[main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-05-26 15:56:01.629-[main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 31ms. Found 2 repository interfaces.
+2020-05-26 15:56:01.832-[main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$7d4f7c20] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-26 15:56:02.024-[main] INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port(s): 9092 (http)
+2020-05-26 15:56:02.040-[main] INFO  o.a.c.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9092"]
+2020-05-26 15:56:02.040-[main] INFO  o.a.c.core.StandardService - Starting service [Tomcat]
+2020-05-26 15:56:02.040-[main] INFO  o.a.c.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.16]
+2020-05-26 15:56:02.056-[main] INFO  o.a.c.c.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk-12.0.2\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Java\jdk-12.0.2\\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\IDM Computer Solutions\UltraEdit;C:\Program Files\Git\cmd;C:\Go\bin;C:\MinGW\bin;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;D:\goProject\src\protoc-3.9.0-win64\bin;C:\Program Files\VisualSVN Server\bin;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\MySQL\MySQL Server 5.5\bin;C:\openssl\bin;C:\Users\sdt\AppData\Local\Microsoft\WindowsApps;C:\Program Files\JetBrains\GoLand 2019.1.3\bin;C:\Go\bin;C:\MinGW\bin;C:\Users\sdt\AppData\Local\BypassRuntm;C:\Users\sdt\AppData\Local\Microsoft\WindowsApps;E:\mysql-8.0.19-winx64\bin;C:\Program Files\JetBrains\IntelliJ IDEA 2019.2.3\bin;;;.]
+2020-05-26 15:56:02.149-[main] INFO  o.a.c.c.C.[.[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-05-26 15:56:02.149-[main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1002 ms
+2020-05-26 15:56:02.238-[main] INFO  c.z.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-05-26 15:56:03.285-[main] INFO  o.h.j.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-05-26 15:56:03.316-[main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.3.7.Final}
+2020-05-26 15:56:03.316-[main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2020-05-26 15:56:03.394-[main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2020-05-26 15:56:03.472-[main] INFO  c.z.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-05-26 15:56:04.472-[main] INFO  o.a.c.core.StandardService - Stopping service [Tomcat]
+2020-05-26 15:56:04.488-[main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-05-26 16:05:57.737-[main] INFO  com.sdt.dapp.DappApplication - Starting DappApplication on DESKTOP-7NFGT2P with PID 14060 (D:\javaProject\BankCertApp\target\classes started by sdt in D:\javaProject\BankCertApp)
+2020-05-26 16:05:57.737-[main] INFO  com.sdt.dapp.DappApplication - No active profile set, falling back to default profiles: default
+2020-05-26 16:05:58.112-[main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-05-26 16:05:58.159-[main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 47ms. Found 2 repository interfaces.
+2020-05-26 16:05:58.346-[main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c8701036] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-26 16:05:58.534-[main] INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port(s): 9092 (http)
+2020-05-26 16:05:58.549-[main] INFO  o.a.c.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9092"]
+2020-05-26 16:05:58.549-[main] INFO  o.a.c.core.StandardService - Starting service [Tomcat]
+2020-05-26 16:05:58.549-[main] INFO  o.a.c.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.16]
+2020-05-26 16:05:58.549-[main] INFO  o.a.c.c.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk-12.0.2\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Java\jdk-12.0.2\\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\IDM Computer Solutions\UltraEdit;C:\Program Files\Git\cmd;C:\Go\bin;C:\MinGW\bin;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;D:\goProject\src\protoc-3.9.0-win64\bin;C:\Program Files\VisualSVN Server\bin;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\MySQL\MySQL Server 5.5\bin;C:\openssl\bin;C:\Users\sdt\AppData\Local\Microsoft\WindowsApps;C:\Program Files\JetBrains\GoLand 2019.1.3\bin;C:\Go\bin;C:\MinGW\bin;C:\Users\sdt\AppData\Local\BypassRuntm;C:\Users\sdt\AppData\Local\Microsoft\WindowsApps;E:\mysql-8.0.19-winx64\bin;C:\Program Files\JetBrains\IntelliJ IDEA 2019.2.3\bin;;;.]
+2020-05-26 16:05:58.674-[main] INFO  o.a.c.c.C.[.[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-05-26 16:05:58.674-[main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 921 ms
+2020-05-26 16:05:58.752-[main] INFO  c.z.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-05-26 16:05:58.815-[main] INFO  c.z.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020-05-26 16:05:58.831-[main] INFO  o.h.j.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-05-26 16:05:58.877-[main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.3.7.Final}
+2020-05-26 16:05:58.877-[main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2020-05-26 16:05:58.956-[main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2020-05-26 16:05:59.018-[main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-05-26 16:05:59.346-[main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-26 16:05:59.643-[main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-26 16:05:59.737-[main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+2020-05-26 16:05:59.783-[main] INFO  o.a.c.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9092"]
+2020-05-26 16:05:59.799-[main] INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat started on port(s): 9092 (http) with context path ''
+2020-05-26 16:05:59.799-[main] INFO  com.sdt.dapp.DappApplication - Started DappApplication in 2.265 seconds (JVM running for 2.896)
+2020-05-26 16:06:07.521-[http-nio-9092-exec-1] INFO  o.a.c.c.C.[.[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-26 16:06:07.523-[http-nio-9092-exec-1] INFO  o.s.w.s.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-05-26 16:06:07.527-[http-nio-9092-exec-1] INFO  o.s.w.s.DispatcherServlet - Completed initialization in 4 ms
+2020-05-26 16:06:12.962-[http-nio-9092-exec-1] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+2020-05-26 16:09:02.776-[Thread-2] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-05-26 16:09:02.776-[Thread-2] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-05-26 16:09:02.776-[Thread-2] INFO  c.z.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2020-05-26 16:09:02.776-[Thread-2] INFO  c.z.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2020-05-26 16:09:04.650-[main] INFO  com.sdt.dapp.DappApplication - Starting DappApplication on DESKTOP-7NFGT2P with PID 12732 (D:\javaProject\BankCertApp\target\classes started by sdt in D:\javaProject\BankCertApp)
+2020-05-26 16:09:04.666-[main] INFO  com.sdt.dapp.DappApplication - No active profile set, falling back to default profiles: default
+2020-05-26 16:09:05.072-[main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-05-26 16:09:05.103-[main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 31ms. Found 2 repository interfaces.
+2020-05-26 16:09:05.291-[main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$4cdb732] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-26 16:09:05.512-[main] INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port(s): 9092 (http)
+2020-05-26 16:09:05.521-[main] INFO  o.a.c.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9092"]
+2020-05-26 16:09:05.527-[main] INFO  o.a.c.core.StandardService - Starting service [Tomcat]
+2020-05-26 16:09:05.527-[main] INFO  o.a.c.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.16]
+2020-05-26 16:09:05.531-[main] INFO  o.a.c.c.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk-12.0.2\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Java\jdk-12.0.2\\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\IDM Computer Solutions\UltraEdit;C:\Program Files\Git\cmd;C:\Go\bin;C:\MinGW\bin;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;D:\goProject\src\protoc-3.9.0-win64\bin;C:\Program Files\VisualSVN Server\bin;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\MySQL\MySQL Server 5.5\bin;C:\openssl\bin;C:\Users\sdt\AppData\Local\Microsoft\WindowsApps;C:\Program Files\JetBrains\GoLand 2019.1.3\bin;C:\Go\bin;C:\MinGW\bin;C:\Users\sdt\AppData\Local\BypassRuntm;C:\Users\sdt\AppData\Local\Microsoft\WindowsApps;E:\mysql-8.0.19-winx64\bin;C:\Program Files\JetBrains\IntelliJ IDEA 2019.2.3\bin;;;.]
+2020-05-26 16:09:05.642-[main] INFO  o.a.c.c.C.[.[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-05-26 16:09:05.642-[main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 961 ms
+2020-05-26 16:09:05.740-[main] INFO  c.z.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-05-26 16:09:05.799-[main] INFO  c.z.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020-05-26 16:09:05.827-[main] INFO  o.h.j.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-05-26 16:09:05.864-[main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.3.7.Final}
+2020-05-26 16:09:05.865-[main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2020-05-26 16:09:05.949-[main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2020-05-26 16:09:06.023-[main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-05-26 16:09:06.893-[main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-26 16:09:07.203-[main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-26 16:09:07.281-[main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+2020-05-26 16:09:07.343-[main] INFO  o.a.c.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9092"]
+2020-05-26 16:09:07.362-[main] INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat started on port(s): 9092 (http) with context path ''
+2020-05-26 16:09:07.364-[main] INFO  com.sdt.dapp.DappApplication - Started DappApplication in 2.916 seconds (JVM running for 3.587)
+2020-05-26 16:09:15.307-[http-nio-9092-exec-1] INFO  o.a.c.c.C.[.[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-26 16:09:15.308-[http-nio-9092-exec-1] INFO  o.s.w.s.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-05-26 16:09:15.313-[http-nio-9092-exec-1] INFO  o.s.w.s.DispatcherServlet - Completed initialization in 5 ms
+2020-05-26 16:09:19.527-[http-nio-9092-exec-7] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+2020-05-26 16:10:11.675-[Thread-2] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-05-26 16:10:11.675-[Thread-2] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-05-26 16:10:11.691-[Thread-2] INFO  c.z.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2020-05-26 16:10:11.691-[Thread-2] INFO  c.z.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2020-05-26 16:10:14.081-[main] INFO  com.sdt.dapp.DappApplication - Starting DappApplication on DESKTOP-7NFGT2P with PID 14660 (D:\javaProject\BankCertApp\target\classes started by sdt in D:\javaProject\BankCertApp)
+2020-05-26 16:10:14.097-[main] INFO  com.sdt.dapp.DappApplication - No active profile set, falling back to default profiles: default
+2020-05-26 16:10:14.487-[main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-05-26 16:10:14.534-[main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 47ms. Found 2 repository interfaces.
+2020-05-26 16:10:14.722-[main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$3a7c1da6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-26 16:10:14.909-[main] INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port(s): 9092 (http)
+2020-05-26 16:10:14.925-[main] INFO  o.a.c.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9092"]
+2020-05-26 16:10:14.925-[main] INFO  o.a.c.core.StandardService - Starting service [Tomcat]
+2020-05-26 16:10:14.925-[main] INFO  o.a.c.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.16]
+2020-05-26 16:10:14.940-[main] INFO  o.a.c.c.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk-12.0.2\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Java\jdk-12.0.2\\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\IDM Computer Solutions\UltraEdit;C:\Program Files\Git\cmd;C:\Go\bin;C:\MinGW\bin;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;D:\goProject\src\protoc-3.9.0-win64\bin;C:\Program Files\VisualSVN Server\bin;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\MySQL\MySQL Server 5.5\bin;C:\openssl\bin;C:\Users\sdt\AppData\Local\Microsoft\WindowsApps;C:\Program Files\JetBrains\GoLand 2019.1.3\bin;C:\Go\bin;C:\MinGW\bin;C:\Users\sdt\AppData\Local\BypassRuntm;C:\Users\sdt\AppData\Local\Microsoft\WindowsApps;E:\mysql-8.0.19-winx64\bin;C:\Program Files\JetBrains\IntelliJ IDEA 2019.2.3\bin;;;.]
+2020-05-26 16:10:15.034-[main] INFO  o.a.c.c.C.[.[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-05-26 16:10:15.034-[main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 922 ms
+2020-05-26 16:10:15.128-[main] INFO  c.z.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-05-26 16:10:16.175-[main] INFO  o.h.j.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-05-26 16:10:16.206-[main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.3.7.Final}
+2020-05-26 16:10:16.206-[main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2020-05-26 16:10:16.268-[main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2020-05-26 16:10:16.362-[main] INFO  c.z.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-05-26 16:10:17.362-[main] INFO  o.a.c.core.StandardService - Stopping service [Tomcat]
+2020-05-26 16:10:17.362-[main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-05-26 16:10:46.687-[main] INFO  com.sdt.dapp.DappApplication - Starting DappApplication on DESKTOP-7NFGT2P with PID 4756 (D:\javaProject\BankCertApp\target\classes started by sdt in D:\javaProject\BankCertApp)
+2020-05-26 16:10:46.687-[main] INFO  com.sdt.dapp.DappApplication - No active profile set, falling back to default profiles: default
+2020-05-26 16:10:47.062-[main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-05-26 16:10:47.109-[main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 32ms. Found 2 repository interfaces.
+2020-05-26 16:10:47.280-[main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$2042dd0d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-26 16:10:47.483-[main] INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port(s): 9092 (http)
+2020-05-26 16:10:47.499-[main] INFO  o.a.c.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9092"]
+2020-05-26 16:10:47.499-[main] INFO  o.a.c.core.StandardService - Starting service [Tomcat]
+2020-05-26 16:10:47.499-[main] INFO  o.a.c.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.16]
+2020-05-26 16:10:47.515-[main] INFO  o.a.c.c.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk-12.0.2\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Java\jdk-12.0.2\\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\IDM Computer Solutions\UltraEdit;C:\Program Files\Git\cmd;C:\Go\bin;C:\MinGW\bin;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;D:\goProject\src\protoc-3.9.0-win64\bin;C:\Program Files\VisualSVN Server\bin;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\MySQL\MySQL Server 5.5\bin;C:\openssl\bin;C:\Users\sdt\AppData\Local\Microsoft\WindowsApps;C:\Program Files\JetBrains\GoLand 2019.1.3\bin;C:\Go\bin;C:\MinGW\bin;C:\Users\sdt\AppData\Local\BypassRuntm;C:\Users\sdt\AppData\Local\Microsoft\WindowsApps;E:\mysql-8.0.19-winx64\bin;C:\Program Files\JetBrains\IntelliJ IDEA 2019.2.3\bin;;;.]
+2020-05-26 16:10:47.608-[main] INFO  o.a.c.c.C.[.[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-05-26 16:10:47.608-[main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 890 ms
+2020-05-26 16:10:47.702-[main] INFO  c.z.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-05-26 16:10:48.764-[main] INFO  o.h.j.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-05-26 16:10:48.811-[main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.3.7.Final}
+2020-05-26 16:10:48.811-[main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2020-05-26 16:10:48.889-[main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2020-05-26 16:10:48.952-[main] INFO  c.z.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-05-26 16:10:49.952-[main] INFO  o.a.c.core.StandardService - Stopping service [Tomcat]
+2020-05-26 16:10:49.952-[main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-05-26 16:11:12.138-[main] INFO  com.sdt.dapp.DappApplication - Starting DappApplication on DESKTOP-7NFGT2P with PID 9220 (D:\javaProject\BankCertApp\target\classes started by sdt in D:\javaProject\BankCertApp)
+2020-05-26 16:11:12.138-[main] INFO  com.sdt.dapp.DappApplication - No active profile set, falling back to default profiles: default
+2020-05-26 16:11:12.513-[main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-05-26 16:11:12.560-[main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 32ms. Found 2 repository interfaces.
+2020-05-26 16:11:12.747-[main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$af59b691] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-26 16:11:12.935-[main] INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port(s): 9092 (http)
+2020-05-26 16:11:12.950-[main] INFO  o.a.c.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9092"]
+2020-05-26 16:11:12.950-[main] INFO  o.a.c.core.StandardService - Starting service [Tomcat]
+2020-05-26 16:11:12.950-[main] INFO  o.a.c.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.16]
+2020-05-26 16:11:12.966-[main] INFO  o.a.c.c.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk-12.0.2\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Java\jdk-12.0.2\\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\IDM Computer Solutions\UltraEdit;C:\Program Files\Git\cmd;C:\Go\bin;C:\MinGW\bin;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;D:\goProject\src\protoc-3.9.0-win64\bin;C:\Program Files\VisualSVN Server\bin;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\MySQL\MySQL Server 5.5\bin;C:\openssl\bin;C:\Users\sdt\AppData\Local\Microsoft\WindowsApps;C:\Program Files\JetBrains\GoLand 2019.1.3\bin;C:\Go\bin;C:\MinGW\bin;C:\Users\sdt\AppData\Local\BypassRuntm;C:\Users\sdt\AppData\Local\Microsoft\WindowsApps;E:\mysql-8.0.19-winx64\bin;C:\Program Files\JetBrains\IntelliJ IDEA 2019.2.3\bin;;;.]
+2020-05-26 16:11:13.060-[main] INFO  o.a.c.c.C.[.[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-05-26 16:11:13.060-[main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 891 ms
+2020-05-26 16:11:13.153-[main] INFO  c.z.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-05-26 16:11:13.200-[main] INFO  c.z.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020-05-26 16:11:13.231-[main] INFO  o.h.j.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-05-26 16:11:13.263-[main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.3.7.Final}
+2020-05-26 16:11:13.263-[main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2020-05-26 16:11:13.356-[main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2020-05-26 16:11:13.419-[main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-05-26 16:11:14.200-[main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-26 16:11:14.481-[main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-26 16:11:14.575-[main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+2020-05-26 16:11:14.622-[main] INFO  o.a.c.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9092"]
+2020-05-26 16:11:14.637-[main] INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat started on port(s): 9092 (http) with context path ''
+2020-05-26 16:11:14.637-[main] INFO  com.sdt.dapp.DappApplication - Started DappApplication in 2.702 seconds (JVM running for 3.341)
+2020-05-26 16:11:30.010-[http-nio-9092-exec-1] INFO  o.a.c.c.C.[.[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-26 16:11:30.011-[http-nio-9092-exec-1] INFO  o.s.w.s.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-05-26 16:11:30.027-[http-nio-9092-exec-1] INFO  o.s.w.s.DispatcherServlet - Completed initialization in 16 ms
+2020-05-26 16:11:35.903-[http-nio-9092-exec-1] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+2020-05-26 16:11:55.247-[Thread-2] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-05-26 16:11:55.247-[Thread-2] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-05-26 16:11:55.247-[Thread-2] INFO  c.z.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2020-05-26 16:11:55.247-[Thread-2] INFO  c.z.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2020-05-26 16:11:57.012-[main] INFO  com.sdt.dapp.DappApplication - Starting DappApplication on DESKTOP-7NFGT2P with PID 13532 (D:\javaProject\BankCertApp\target\classes started by sdt in D:\javaProject\BankCertApp)
+2020-05-26 16:11:57.012-[main] INFO  com.sdt.dapp.DappApplication - No active profile set, falling back to default profiles: default
+2020-05-26 16:11:57.387-[main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-05-26 16:11:57.434-[main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 31ms. Found 2 repository interfaces.
+2020-05-26 16:11:57.606-[main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$9d196d26] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-26 16:11:57.809-[main] INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port(s): 9092 (http)
+2020-05-26 16:11:57.809-[main] INFO  o.a.c.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9092"]
+2020-05-26 16:11:57.824-[main] INFO  o.a.c.core.StandardService - Starting service [Tomcat]
+2020-05-26 16:11:57.824-[main] INFO  o.a.c.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.16]
+2020-05-26 16:11:57.824-[main] INFO  o.a.c.c.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk-12.0.2\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Java\jdk-12.0.2\\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\IDM Computer Solutions\UltraEdit;C:\Program Files\Git\cmd;C:\Go\bin;C:\MinGW\bin;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;D:\goProject\src\protoc-3.9.0-win64\bin;C:\Program Files\VisualSVN Server\bin;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\MySQL\MySQL Server 5.5\bin;C:\openssl\bin;C:\Users\sdt\AppData\Local\Microsoft\WindowsApps;C:\Program Files\JetBrains\GoLand 2019.1.3\bin;C:\Go\bin;C:\MinGW\bin;C:\Users\sdt\AppData\Local\BypassRuntm;C:\Users\sdt\AppData\Local\Microsoft\WindowsApps;E:\mysql-8.0.19-winx64\bin;C:\Program Files\JetBrains\IntelliJ IDEA 2019.2.3\bin;;;.]
+2020-05-26 16:11:57.934-[main] INFO  o.a.c.c.C.[.[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-05-26 16:11:57.934-[main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 891 ms
+2020-05-26 16:11:58.012-[main] INFO  c.z.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-05-26 16:11:58.074-[main] INFO  c.z.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020-05-26 16:11:58.090-[main] INFO  o.h.j.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-05-26 16:11:58.121-[main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.3.7.Final}
+2020-05-26 16:11:58.121-[main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2020-05-26 16:11:58.199-[main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2020-05-26 16:11:58.277-[main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-05-26 16:11:58.965-[main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-26 16:11:59.262-[main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-26 16:11:59.340-[main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+2020-05-26 16:11:59.402-[main] INFO  o.a.c.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9092"]
+2020-05-26 16:11:59.418-[main] INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat started on port(s): 9092 (http) with context path ''
+2020-05-26 16:11:59.418-[main] INFO  com.sdt.dapp.DappApplication - Started DappApplication in 2.593 seconds (JVM running for 3.276)
+2020-05-26 16:12:10.496-[http-nio-9092-exec-1] INFO  o.a.c.c.C.[.[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-26 16:12:10.497-[http-nio-9092-exec-1] INFO  o.s.w.s.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-05-26 16:12:10.501-[http-nio-9092-exec-1] INFO  o.s.w.s.DispatcherServlet - Completed initialization in 4 ms
+2020-05-26 16:12:14.572-[http-nio-9092-exec-8] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+2020-05-26 16:30:36.108-[Thread-2] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-05-26 16:30:36.108-[Thread-2] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-05-26 16:30:36.108-[Thread-2] INFO  c.z.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2020-05-26 16:30:36.108-[Thread-2] INFO  c.z.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2020-05-26 16:30:39.280-[main] INFO  com.sdt.dapp.DappApplication - Starting DappApplication on DESKTOP-7NFGT2P with PID 7608 (D:\javaProject\BankCertApp\target\classes started by sdt in D:\javaProject\BankCertApp)
+2020-05-26 16:30:39.280-[main] INFO  com.sdt.dapp.DappApplication - No active profile set, falling back to default profiles: default
+2020-05-26 16:30:39.686-[main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-05-26 16:30:39.733-[main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 47ms. Found 2 repository interfaces.
+2020-05-26 16:30:39.921-[main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$1a1e5c54] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-26 16:30:40.108-[main] INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port(s): 9092 (http)
+2020-05-26 16:30:40.124-[main] INFO  o.a.c.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9092"]
+2020-05-26 16:30:40.124-[main] INFO  o.a.c.core.StandardService - Starting service [Tomcat]
+2020-05-26 16:30:40.124-[main] INFO  o.a.c.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.16]
+2020-05-26 16:30:40.140-[main] INFO  o.a.c.c.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk-12.0.2\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Java\jdk-12.0.2\\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\IDM Computer Solutions\UltraEdit;C:\Program Files\Git\cmd;C:\Go\bin;C:\MinGW\bin;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;D:\goProject\src\protoc-3.9.0-win64\bin;C:\Program Files\VisualSVN Server\bin;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\MySQL\MySQL Server 5.5\bin;C:\openssl\bin;C:\Users\sdt\AppData\Local\Microsoft\WindowsApps;C:\Program Files\JetBrains\GoLand 2019.1.3\bin;C:\Go\bin;C:\MinGW\bin;C:\Users\sdt\AppData\Local\BypassRuntm;C:\Users\sdt\AppData\Local\Microsoft\WindowsApps;E:\mysql-8.0.19-winx64\bin;C:\Program Files\JetBrains\IntelliJ IDEA 2019.2.3\bin;;;.]
+2020-05-26 16:30:40.233-[main] INFO  o.a.c.c.C.[.[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-05-26 16:30:40.233-[main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 921 ms
+2020-05-26 16:30:40.327-[main] INFO  c.z.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-05-26 16:30:40.389-[main] INFO  c.z.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020-05-26 16:30:40.405-[main] INFO  o.h.j.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-05-26 16:30:40.452-[main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.3.7.Final}
+2020-05-26 16:30:40.452-[main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2020-05-26 16:30:40.530-[main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2020-05-26 16:30:40.592-[main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-05-26 16:30:41.155-[main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-26 16:30:41.467-[main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-26 16:30:41.561-[main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+2020-05-26 16:30:41.608-[main] INFO  o.a.c.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9092"]
+2020-05-26 16:30:41.623-[main] INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat started on port(s): 9092 (http) with context path ''
+2020-05-26 16:30:41.623-[main] INFO  com.sdt.dapp.DappApplication - Started DappApplication in 2.577 seconds (JVM running for 3.26)
+2020-05-26 16:30:48.769-[http-nio-9092-exec-1] INFO  o.a.c.c.C.[.[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-26 16:30:48.770-[http-nio-9092-exec-1] INFO  o.s.w.s.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-05-26 16:30:48.774-[http-nio-9092-exec-1] INFO  o.s.w.s.DispatcherServlet - Completed initialization in 4 ms
+2020-05-26 16:30:53.555-[http-nio-9092-exec-5] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+2020-05-26 16:39:04.472-[Thread-2] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-05-26 16:39:04.472-[Thread-2] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-05-26 16:39:04.472-[Thread-2] INFO  c.z.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2020-05-26 16:39:04.472-[Thread-2] INFO  c.z.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2020-05-26 16:39:07.783-[main] INFO  com.sdt.dapp.DappApplication - Starting DappApplication on DESKTOP-7NFGT2P with PID 14664 (D:\javaProject\BankCertApp\target\classes started by sdt in D:\javaProject\BankCertApp)
+2020-05-26 16:39:07.783-[main] INFO  com.sdt.dapp.DappApplication - No active profile set, falling back to default profiles: default
+2020-05-26 16:39:08.189-[main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-05-26 16:39:08.220-[main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 31ms. Found 2 repository interfaces.
+2020-05-26 16:39:08.407-[main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$3c5594ab] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-26 16:39:08.610-[main] INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port(s): 9092 (http)
+2020-05-26 16:39:08.610-[main] INFO  o.a.c.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9092"]
+2020-05-26 16:39:08.626-[main] INFO  o.a.c.core.StandardService - Starting service [Tomcat]
+2020-05-26 16:39:08.626-[main] INFO  o.a.c.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.16]
+2020-05-26 16:39:08.626-[main] INFO  o.a.c.c.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk-12.0.2\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Java\jdk-12.0.2\\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\IDM Computer Solutions\UltraEdit;C:\Program Files\Git\cmd;C:\Go\bin;C:\MinGW\bin;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;D:\goProject\src\protoc-3.9.0-win64\bin;C:\Program Files\VisualSVN Server\bin;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\MySQL\MySQL Server 5.5\bin;C:\openssl\bin;C:\Users\sdt\AppData\Local\Microsoft\WindowsApps;C:\Program Files\JetBrains\GoLand 2019.1.3\bin;C:\Go\bin;C:\MinGW\bin;C:\Users\sdt\AppData\Local\BypassRuntm;C:\Users\sdt\AppData\Local\Microsoft\WindowsApps;E:\mysql-8.0.19-winx64\bin;C:\Program Files\JetBrains\IntelliJ IDEA 2019.2.3\bin;;;.]
+2020-05-26 16:39:08.767-[main] INFO  o.a.c.c.C.[.[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-05-26 16:39:08.767-[main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 953 ms
+2020-05-26 16:39:08.845-[main] INFO  c.z.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-05-26 16:39:08.907-[main] INFO  c.z.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020-05-26 16:39:08.939-[main] INFO  o.h.j.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-05-26 16:39:08.970-[main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.3.7.Final}
+2020-05-26 16:39:08.970-[main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2020-05-26 16:39:09.048-[main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2020-05-26 16:39:09.126-[main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-05-26 16:39:09.532-[main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-26 16:39:09.829-[main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-26 16:39:09.907-[main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+2020-05-26 16:39:09.954-[main] INFO  o.a.c.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9092"]
+2020-05-26 16:39:09.970-[main] INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat started on port(s): 9092 (http) with context path ''
+2020-05-26 16:39:09.985-[main] INFO  com.sdt.dapp.DappApplication - Started DappApplication in 2.421 seconds (JVM running for 3.065)
+2020-05-26 16:39:17.465-[http-nio-9092-exec-1] INFO  o.a.c.c.C.[.[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-26 16:39:17.465-[http-nio-9092-exec-1] INFO  o.s.w.s.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-05-26 16:39:17.470-[http-nio-9092-exec-1] INFO  o.s.w.s.DispatcherServlet - Completed initialization in 5 ms
+2020-05-26 16:39:22.168-[http-nio-9092-exec-4] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+2020-05-26 16:45:43.949-[Thread-2] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-05-26 16:45:43.949-[Thread-2] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-05-26 16:45:43.949-[Thread-2] INFO  c.z.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2020-05-26 16:45:43.965-[Thread-2] INFO  c.z.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2020-05-26 16:45:47.160-[main] INFO  com.sdt.dapp.DappApplication - Starting DappApplication on DESKTOP-7NFGT2P with PID 5624 (D:\javaProject\BankCertApp\target\classes started by sdt in D:\javaProject\BankCertApp)
+2020-05-26 16:45:47.176-[main] INFO  com.sdt.dapp.DappApplication - No active profile set, falling back to default profiles: default
+2020-05-26 16:45:47.566-[main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-05-26 16:45:47.613-[main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 31ms. Found 2 repository interfaces.
+2020-05-26 16:45:47.801-[main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$782d8b32] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-26 16:45:48.004-[main] INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port(s): 9092 (http)
+2020-05-26 16:45:48.019-[main] INFO  o.a.c.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9092"]
+2020-05-26 16:45:48.019-[main] INFO  o.a.c.core.StandardService - Starting service [Tomcat]
+2020-05-26 16:45:48.019-[main] INFO  o.a.c.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.16]
+2020-05-26 16:45:48.019-[main] INFO  o.a.c.c.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk-12.0.2\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Java\jdk-12.0.2\\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\IDM Computer Solutions\UltraEdit;C:\Program Files\Git\cmd;C:\Go\bin;C:\MinGW\bin;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;D:\goProject\src\protoc-3.9.0-win64\bin;C:\Program Files\VisualSVN Server\bin;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\MySQL\MySQL Server 5.5\bin;C:\openssl\bin;C:\Users\sdt\AppData\Local\Microsoft\WindowsApps;C:\Program Files\JetBrains\GoLand 2019.1.3\bin;C:\Go\bin;C:\MinGW\bin;C:\Users\sdt\AppData\Local\BypassRuntm;C:\Users\sdt\AppData\Local\Microsoft\WindowsApps;E:\mysql-8.0.19-winx64\bin;C:\Program Files\JetBrains\IntelliJ IDEA 2019.2.3\bin;;;.]
+2020-05-26 16:45:48.129-[main] INFO  o.a.c.c.C.[.[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-05-26 16:45:48.129-[main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 938 ms
+2020-05-26 16:45:48.222-[main] INFO  c.z.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-05-26 16:45:48.285-[main] INFO  c.z.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020-05-26 16:45:48.300-[main] INFO  o.h.j.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-05-26 16:45:48.332-[main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.3.7.Final}
+2020-05-26 16:45:48.332-[main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2020-05-26 16:45:48.425-[main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2020-05-26 16:45:48.488-[main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-05-26 16:45:48.832-[main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-26 16:45:49.128-[main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-26 16:45:49.207-[main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+2020-05-26 16:45:49.285-[main] INFO  o.a.c.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9092"]
+2020-05-26 16:45:49.285-[main] INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat started on port(s): 9092 (http) with context path ''
+2020-05-26 16:45:49.300-[main] INFO  com.sdt.dapp.DappApplication - Started DappApplication in 2.359 seconds (JVM running for 2.99)
+2020-05-26 16:45:58.977-[http-nio-9092-exec-1] INFO  o.a.c.c.C.[.[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-26 16:45:58.977-[http-nio-9092-exec-1] INFO  o.s.w.s.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-05-26 16:45:58.982-[http-nio-9092-exec-1] INFO  o.s.w.s.DispatcherServlet - Completed initialization in 4 ms
+2020-05-26 16:46:03.820-[http-nio-9092-exec-1] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+2020-05-26 16:59:15.041-[Thread-2] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-05-26 16:59:15.041-[Thread-2] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-05-26 16:59:15.041-[Thread-2] INFO  c.z.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2020-05-26 16:59:15.041-[Thread-2] INFO  c.z.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2020-05-26 16:59:17.625-[main] INFO  com.sdt.dapp.DappApplication - Starting DappApplication on DESKTOP-7NFGT2P with PID 9088 (D:\javaProject\BankCertApp\target\classes started by sdt in D:\javaProject\BankCertApp)
+2020-05-26 16:59:17.625-[main] INFO  com.sdt.dapp.DappApplication - No active profile set, falling back to default profiles: default
+2020-05-26 16:59:18.031-[main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-05-26 16:59:18.078-[main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 47ms. Found 2 repository interfaces.
+2020-05-26 16:59:18.265-[main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$73fbf7a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-26 16:59:18.468-[main] INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port(s): 9092 (http)
+2020-05-26 16:59:18.468-[main] INFO  o.a.c.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9092"]
+2020-05-26 16:59:18.484-[main] INFO  o.a.c.core.StandardService - Starting service [Tomcat]
+2020-05-26 16:59:18.484-[main] INFO  o.a.c.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.16]
+2020-05-26 16:59:18.484-[main] INFO  o.a.c.c.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk-12.0.2\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Java\jdk-12.0.2\\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\IDM Computer Solutions\UltraEdit;C:\Program Files\Git\cmd;C:\Go\bin;C:\MinGW\bin;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;D:\goProject\src\protoc-3.9.0-win64\bin;C:\Program Files\VisualSVN Server\bin;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\MySQL\MySQL Server 5.5\bin;C:\openssl\bin;C:\Users\sdt\AppData\Local\Microsoft\WindowsApps;C:\Program Files\JetBrains\GoLand 2019.1.3\bin;C:\Go\bin;C:\MinGW\bin;C:\Users\sdt\AppData\Local\BypassRuntm;C:\Users\sdt\AppData\Local\Microsoft\WindowsApps;E:\mysql-8.0.19-winx64\bin;C:\Program Files\JetBrains\IntelliJ IDEA 2019.2.3\bin;;;.]
+2020-05-26 16:59:18.593-[main] INFO  o.a.c.c.C.[.[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-05-26 16:59:18.593-[main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 953 ms
+2020-05-26 16:59:18.671-[main] INFO  c.z.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-05-26 16:59:18.734-[main] INFO  c.z.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020-05-26 16:59:18.765-[main] INFO  o.h.j.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-05-26 16:59:18.781-[main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.3.7.Final}
+2020-05-26 16:59:18.781-[main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2020-05-26 16:59:18.874-[main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2020-05-26 16:59:18.937-[main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-05-26 16:59:19.265-[main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-26 16:59:19.577-[main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-26 16:59:19.655-[main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+2020-05-26 16:59:19.718-[main] INFO  o.a.c.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9092"]
+2020-05-26 16:59:19.718-[main] INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat started on port(s): 9092 (http) with context path ''
+2020-05-26 16:59:19.733-[main] INFO  com.sdt.dapp.DappApplication - Started DappApplication in 2.327 seconds (JVM running for 2.955)
+2020-05-26 16:59:28.482-[http-nio-9092-exec-1] INFO  o.a.c.c.C.[.[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-26 16:59:28.483-[http-nio-9092-exec-1] INFO  o.s.w.s.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-05-26 16:59:28.487-[http-nio-9092-exec-1] INFO  o.s.w.s.DispatcherServlet - Completed initialization in 4 ms
+2020-05-26 16:59:34.470-[http-nio-9092-exec-8] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+2020-05-26 17:02:27.471-[Thread-2] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-05-26 17:02:27.471-[Thread-2] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-05-26 17:02:27.473-[Thread-2] INFO  c.z.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2020-05-26 17:02:27.476-[Thread-2] INFO  c.z.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2020-05-26 17:02:29.725-[main] INFO  com.sdt.dapp.DappApplication - Starting DappApplication on DESKTOP-7NFGT2P with PID 11308 (D:\javaProject\BankCertApp\target\classes started by sdt in D:\javaProject\BankCertApp)
+2020-05-26 17:02:29.728-[main] INFO  com.sdt.dapp.DappApplication - No active profile set, falling back to default profiles: default
+2020-05-26 17:02:30.112-[main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-05-26 17:02:30.152-[main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 35ms. Found 2 repository interfaces.
+2020-05-26 17:02:30.335-[main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$6df2426e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-26 17:02:30.533-[main] INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port(s): 9092 (http)
+2020-05-26 17:02:30.542-[main] INFO  o.a.c.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9092"]
+2020-05-26 17:02:30.548-[main] INFO  o.a.c.core.StandardService - Starting service [Tomcat]
+2020-05-26 17:02:30.549-[main] INFO  o.a.c.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.16]
+2020-05-26 17:02:30.565-[main] INFO  o.a.c.c.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk-12.0.2\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Java\jdk-12.0.2\\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\IDM Computer Solutions\UltraEdit;C:\Program Files\Git\cmd;C:\Go\bin;C:\MinGW\bin;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;D:\goProject\src\protoc-3.9.0-win64\bin;C:\Program Files\VisualSVN Server\bin;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\MySQL\MySQL Server 5.5\bin;C:\openssl\bin;C:\Users\sdt\AppData\Local\Microsoft\WindowsApps;C:\Program Files\JetBrains\GoLand 2019.1.3\bin;C:\Go\bin;C:\MinGW\bin;C:\Users\sdt\AppData\Local\BypassRuntm;C:\Users\sdt\AppData\Local\Microsoft\WindowsApps;E:\mysql-8.0.19-winx64\bin;C:\Program Files\JetBrains\IntelliJ IDEA 2019.2.3\bin;;;.]
+2020-05-26 17:02:30.665-[main] INFO  o.a.c.c.C.[.[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-05-26 17:02:30.665-[main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 912 ms
+2020-05-26 17:02:30.749-[main] INFO  c.z.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-05-26 17:02:30.804-[main] INFO  c.z.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020-05-26 17:02:30.836-[main] INFO  o.h.j.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-05-26 17:02:30.866-[main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.3.7.Final}
+2020-05-26 17:02:30.867-[main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2020-05-26 17:02:30.945-[main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2020-05-26 17:02:31.015-[main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-05-26 17:02:31.351-[main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-26 17:02:31.653-[main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-26 17:02:31.734-[main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+2020-05-26 17:02:31.785-[main] INFO  o.a.c.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9092"]
+2020-05-26 17:02:31.817-[main] INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat started on port(s): 9092 (http) with context path ''
+2020-05-26 17:02:31.819-[main] INFO  com.sdt.dapp.DappApplication - Started DappApplication in 2.293 seconds (JVM running for 2.985)
+2020-05-26 17:02:38.095-[http-nio-9092-exec-1] INFO  o.a.c.c.C.[.[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-26 17:02:38.096-[http-nio-9092-exec-1] INFO  o.s.w.s.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-05-26 17:02:38.101-[http-nio-9092-exec-1] INFO  o.s.w.s.DispatcherServlet - Completed initialization in 5 ms
+2020-05-26 17:02:52.575-[http-nio-9092-exec-5] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+2020-05-26 17:03:55.622-[Thread-2] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-05-26 17:03:55.623-[Thread-2] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-05-26 17:03:55.625-[Thread-2] INFO  c.z.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2020-05-26 17:03:55.629-[Thread-2] INFO  c.z.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2020-05-26 17:03:57.944-[main] INFO  com.sdt.dapp.DappApplication - Starting DappApplication on DESKTOP-7NFGT2P with PID 14404 (D:\javaProject\BankCertApp\target\classes started by sdt in D:\javaProject\BankCertApp)
+2020-05-26 17:03:57.945-[main] INFO  com.sdt.dapp.DappApplication - No active profile set, falling back to default profiles: default
+2020-05-26 17:03:58.334-[main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-05-26 17:03:58.375-[main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 37ms. Found 2 repository interfaces.
+2020-05-26 17:03:58.563-[main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c4ba1848] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-26 17:03:58.763-[main] INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port(s): 9092 (http)
+2020-05-26 17:03:58.772-[main] INFO  o.a.c.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9092"]
+2020-05-26 17:03:58.778-[main] INFO  o.a.c.core.StandardService - Starting service [Tomcat]
+2020-05-26 17:03:58.778-[main] INFO  o.a.c.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.16]
+2020-05-26 17:03:58.782-[main] INFO  o.a.c.c.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk-12.0.2\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Java\jdk-12.0.2\\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\IDM Computer Solutions\UltraEdit;C:\Program Files\Git\cmd;C:\Go\bin;C:\MinGW\bin;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;D:\goProject\src\protoc-3.9.0-win64\bin;C:\Program Files\VisualSVN Server\bin;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\MySQL\MySQL Server 5.5\bin;C:\openssl\bin;C:\Users\sdt\AppData\Local\Microsoft\WindowsApps;C:\Program Files\JetBrains\GoLand 2019.1.3\bin;C:\Go\bin;C:\MinGW\bin;C:\Users\sdt\AppData\Local\BypassRuntm;C:\Users\sdt\AppData\Local\Microsoft\WindowsApps;E:\mysql-8.0.19-winx64\bin;C:\Program Files\JetBrains\IntelliJ IDEA 2019.2.3\bin;;;.]
+2020-05-26 17:03:58.897-[main] INFO  o.a.c.c.C.[.[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-05-26 17:03:58.897-[main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 925 ms
+2020-05-26 17:03:58.992-[main] INFO  c.z.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-05-26 17:03:59.060-[main] INFO  c.z.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020-05-26 17:03:59.088-[main] INFO  o.h.j.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-05-26 17:03:59.125-[main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.3.7.Final}
+2020-05-26 17:03:59.126-[main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2020-05-26 17:03:59.209-[main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2020-05-26 17:03:59.280-[main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-05-26 17:03:59.678-[main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-26 17:03:59.994-[main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-26 17:04:00.084-[main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+2020-05-26 17:04:00.152-[main] INFO  o.a.c.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9092"]
+2020-05-26 17:04:00.166-[main] INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat started on port(s): 9092 (http) with context path ''
+2020-05-26 17:04:00.168-[main] INFO  com.sdt.dapp.DappApplication - Started DappApplication in 2.427 seconds (JVM running for 3.078)
+2020-05-26 17:04:09.033-[http-nio-9092-exec-1] INFO  o.a.c.c.C.[.[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-26 17:04:09.034-[http-nio-9092-exec-1] INFO  o.s.w.s.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-05-26 17:04:09.039-[http-nio-9092-exec-1] INFO  o.s.w.s.DispatcherServlet - Completed initialization in 5 ms
+2020-05-26 17:04:13.418-[http-nio-9092-exec-8] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+2020-05-26 17:08:39.264-[Thread-2] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-05-26 17:08:39.264-[Thread-2] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-05-26 17:08:39.266-[Thread-2] INFO  c.z.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2020-05-26 17:08:39.270-[Thread-2] INFO  c.z.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2020-05-26 17:08:41.544-[main] INFO  com.sdt.dapp.DappApplication - Starting DappApplication on DESKTOP-7NFGT2P with PID 13616 (D:\javaProject\BankCertApp\target\classes started by sdt in D:\javaProject\BankCertApp)
+2020-05-26 17:08:41.545-[main] INFO  com.sdt.dapp.DappApplication - No active profile set, falling back to default profiles: default
+2020-05-26 17:08:41.926-[main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-05-26 17:08:41.966-[main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 36ms. Found 2 repository interfaces.
+2020-05-26 17:08:42.156-[main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$164d80e1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-26 17:08:42.356-[main] INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port(s): 9092 (http)
+2020-05-26 17:08:42.365-[main] INFO  o.a.c.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9092"]
+2020-05-26 17:08:42.371-[main] INFO  o.a.c.core.StandardService - Starting service [Tomcat]
+2020-05-26 17:08:42.371-[main] INFO  o.a.c.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.16]
+2020-05-26 17:08:42.375-[main] INFO  o.a.c.c.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk-12.0.2\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Java\jdk-12.0.2\\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\IDM Computer Solutions\UltraEdit;C:\Program Files\Git\cmd;C:\Go\bin;C:\MinGW\bin;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;D:\goProject\src\protoc-3.9.0-win64\bin;C:\Program Files\VisualSVN Server\bin;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\MySQL\MySQL Server 5.5\bin;C:\openssl\bin;C:\Users\sdt\AppData\Local\Microsoft\WindowsApps;C:\Program Files\JetBrains\GoLand 2019.1.3\bin;C:\Go\bin;C:\MinGW\bin;C:\Users\sdt\AppData\Local\BypassRuntm;C:\Users\sdt\AppData\Local\Microsoft\WindowsApps;E:\mysql-8.0.19-winx64\bin;C:\Program Files\JetBrains\IntelliJ IDEA 2019.2.3\bin;;;.]
+2020-05-26 17:08:42.482-[main] INFO  o.a.c.c.C.[.[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-05-26 17:08:42.482-[main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 913 ms
+2020-05-26 17:08:42.575-[main] INFO  c.z.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-05-26 17:08:42.633-[main] INFO  c.z.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020-05-26 17:08:42.660-[main] INFO  o.h.j.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-05-26 17:08:42.689-[main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.3.7.Final}
+2020-05-26 17:08:42.690-[main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2020-05-26 17:08:42.779-[main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2020-05-26 17:08:42.850-[main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-05-26 17:08:43.205-[main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-26 17:08:43.525-[main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-26 17:08:43.631-[main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+2020-05-26 17:08:43.685-[main] INFO  o.a.c.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9092"]
+2020-05-26 17:08:43.705-[main] INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat started on port(s): 9092 (http) with context path ''
+2020-05-26 17:08:43.707-[main] INFO  com.sdt.dapp.DappApplication - Started DappApplication in 2.369 seconds (JVM running for 3.036)
+2020-05-26 17:09:03.887-[http-nio-9092-exec-1] INFO  o.a.c.c.C.[.[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-26 17:09:03.888-[http-nio-9092-exec-1] INFO  o.s.w.s.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-05-26 17:09:03.894-[http-nio-9092-exec-1] INFO  o.s.w.s.DispatcherServlet - Completed initialization in 5 ms
+2020-05-26 17:09:08.411-[http-nio-9092-exec-1] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+2020-05-26 17:29:44.042-[Thread-2] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-05-26 17:29:44.042-[Thread-2] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-05-26 17:29:44.042-[Thread-2] INFO  c.z.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2020-05-26 17:29:44.058-[Thread-2] INFO  c.z.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2020-05-26 17:29:47.358-[main] INFO  com.sdt.dapp.DappApplication - Starting DappApplication on DESKTOP-7NFGT2P with PID 1300 (D:\javaProject\BankCertApp\target\classes started by sdt in D:\javaProject\BankCertApp)
+2020-05-26 17:29:47.358-[main] INFO  com.sdt.dapp.DappApplication - No active profile set, falling back to default profiles: default
+2020-05-26 17:29:47.873-[main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-05-26 17:29:47.905-[main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 32ms. Found 2 repository interfaces.
+2020-05-26 17:29:48.092-[main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$31dc4008] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-26 17:29:48.295-[main] INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port(s): 9092 (http)
+2020-05-26 17:29:48.311-[main] INFO  o.a.c.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9092"]
+2020-05-26 17:29:48.311-[main] INFO  o.a.c.core.StandardService - Starting service [Tomcat]
+2020-05-26 17:29:48.311-[main] INFO  o.a.c.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.16]
+2020-05-26 17:29:48.311-[main] INFO  o.a.c.c.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk-12.0.2\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Java\jdk-12.0.2\\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\IDM Computer Solutions\UltraEdit;C:\Program Files\Git\cmd;C:\Go\bin;C:\MinGW\bin;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;D:\goProject\src\protoc-3.9.0-win64\bin;C:\Program Files\VisualSVN Server\bin;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\MySQL\MySQL Server 5.5\bin;C:\openssl\bin;C:\Users\sdt\AppData\Local\Microsoft\WindowsApps;C:\Program Files\JetBrains\GoLand 2019.1.3\bin;C:\Go\bin;C:\MinGW\bin;C:\Users\sdt\AppData\Local\BypassRuntm;C:\Users\sdt\AppData\Local\Microsoft\WindowsApps;E:\mysql-8.0.19-winx64\bin;C:\Program Files\JetBrains\IntelliJ IDEA 2019.2.3\bin;;;.]
+2020-05-26 17:29:48.420-[main] INFO  o.a.c.c.C.[.[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-05-26 17:29:48.420-[main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1046 ms
+2020-05-26 17:29:48.498-[main] INFO  c.z.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-05-26 17:29:48.561-[main] INFO  c.z.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020-05-26 17:29:48.592-[main] INFO  o.h.j.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-05-26 17:29:48.608-[main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.3.7.Final}
+2020-05-26 17:29:48.608-[main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2020-05-26 17:29:48.701-[main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2020-05-26 17:29:48.779-[main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-05-26 17:29:49.108-[main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-26 17:29:49.389-[main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-26 17:29:49.482-[main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+2020-05-26 17:29:49.529-[main] INFO  o.a.c.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9092"]
+2020-05-26 17:29:49.545-[main] INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat started on port(s): 9092 (http) with context path ''
+2020-05-26 17:29:49.545-[main] INFO  com.sdt.dapp.DappApplication - Started DappApplication in 2.406 seconds (JVM running for 3.08)
+2020-05-26 17:29:58.859-[http-nio-9092-exec-1] INFO  o.a.c.c.C.[.[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-26 17:29:58.861-[http-nio-9092-exec-1] INFO  o.s.w.s.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-05-26 17:29:58.865-[http-nio-9092-exec-1] INFO  o.s.w.s.DispatcherServlet - Completed initialization in 4 ms
+2020-05-26 17:30:05.366-[http-nio-9092-exec-7] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+2020-05-26 17:33:57.179-[Thread-2] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-05-26 17:33:57.179-[Thread-2] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-05-26 17:33:57.179-[Thread-2] INFO  c.z.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2020-05-26 17:33:57.195-[Thread-2] INFO  c.z.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2020-05-26 17:34:00.524-[main] INFO  com.sdt.dapp.DappApplication - Starting DappApplication on DESKTOP-7NFGT2P with PID 9436 (D:\javaProject\BankCertApp\target\classes started by sdt in D:\javaProject\BankCertApp)
+2020-05-26 17:34:00.524-[main] INFO  com.sdt.dapp.DappApplication - No active profile set, falling back to default profiles: default
+2020-05-26 17:34:00.915-[main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-05-26 17:34:00.946-[main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 31ms. Found 2 repository interfaces.
+2020-05-26 17:34:01.134-[main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$d01ced7d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-26 17:34:01.337-[main] INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port(s): 9092 (http)
+2020-05-26 17:34:01.337-[main] INFO  o.a.c.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9092"]
+2020-05-26 17:34:01.352-[main] INFO  o.a.c.core.StandardService - Starting service [Tomcat]
+2020-05-26 17:34:01.352-[main] INFO  o.a.c.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.16]
+2020-05-26 17:34:01.352-[main] INFO  o.a.c.c.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk-12.0.2\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Java\jdk-12.0.2\\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\IDM Computer Solutions\UltraEdit;C:\Program Files\Git\cmd;C:\Go\bin;C:\MinGW\bin;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;D:\goProject\src\protoc-3.9.0-win64\bin;C:\Program Files\VisualSVN Server\bin;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\MySQL\MySQL Server 5.5\bin;C:\openssl\bin;C:\Users\sdt\AppData\Local\Microsoft\WindowsApps;C:\Program Files\JetBrains\GoLand 2019.1.3\bin;C:\Go\bin;C:\MinGW\bin;C:\Users\sdt\AppData\Local\BypassRuntm;C:\Users\sdt\AppData\Local\Microsoft\WindowsApps;E:\mysql-8.0.19-winx64\bin;C:\Program Files\JetBrains\IntelliJ IDEA 2019.2.3\bin;;;.]
+2020-05-26 17:34:01.462-[main] INFO  o.a.c.c.C.[.[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-05-26 17:34:01.462-[main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 922 ms
+2020-05-26 17:34:01.540-[main] INFO  c.z.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-05-26 17:34:01.602-[main] INFO  c.z.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020-05-26 17:34:01.633-[main] INFO  o.h.j.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-05-26 17:34:01.665-[main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.3.7.Final}
+2020-05-26 17:34:01.665-[main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2020-05-26 17:34:01.743-[main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2020-05-26 17:34:01.821-[main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-05-26 17:34:02.165-[main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-26 17:34:02.477-[main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-26 17:34:02.556-[main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+2020-05-26 17:34:02.638-[main] INFO  o.a.c.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9092"]
+2020-05-26 17:34:02.656-[main] INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat started on port(s): 9092 (http) with context path ''
+2020-05-26 17:34:02.658-[main] INFO  com.sdt.dapp.DappApplication - Started DappApplication in 2.336 seconds (JVM running for 2.978)
+2020-05-26 17:34:08.929-[http-nio-9092-exec-1] INFO  o.a.c.c.C.[.[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-26 17:34:08.930-[http-nio-9092-exec-1] INFO  o.s.w.s.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-05-26 17:34:08.934-[http-nio-9092-exec-1] INFO  o.s.w.s.DispatcherServlet - Completed initialization in 4 ms
+2020-05-26 17:35:10.650-[http-nio-9092-exec-2] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+2020-05-26 17:36:17.198-[Thread-2] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-05-26 17:36:17.198-[Thread-2] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-05-26 17:36:17.198-[Thread-2] INFO  c.z.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2020-05-26 17:36:17.214-[Thread-2] INFO  c.z.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2020-05-26 17:36:20.635-[main] INFO  com.sdt.dapp.DappApplication - Starting DappApplication on DESKTOP-7NFGT2P with PID 16288 (D:\javaProject\BankCertApp\target\classes started by sdt in D:\javaProject\BankCertApp)
+2020-05-26 17:36:20.635-[main] INFO  com.sdt.dapp.DappApplication - No active profile set, falling back to default profiles: default
+2020-05-26 17:36:21.010-[main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-05-26 17:36:21.056-[main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 46ms. Found 2 repository interfaces.
+2020-05-26 17:36:21.244-[main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$839863c8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-26 17:36:21.447-[main] INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port(s): 9092 (http)
+2020-05-26 17:36:21.447-[main] INFO  o.a.c.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9092"]
+2020-05-26 17:36:21.463-[main] INFO  o.a.c.core.StandardService - Starting service [Tomcat]
+2020-05-26 17:36:21.463-[main] INFO  o.a.c.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.16]
+2020-05-26 17:36:21.463-[main] INFO  o.a.c.c.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk-12.0.2\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Java\jdk-12.0.2\\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\IDM Computer Solutions\UltraEdit;C:\Program Files\Git\cmd;C:\Go\bin;C:\MinGW\bin;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;D:\goProject\src\protoc-3.9.0-win64\bin;C:\Program Files\VisualSVN Server\bin;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\MySQL\MySQL Server 5.5\bin;C:\openssl\bin;C:\Users\sdt\AppData\Local\Microsoft\WindowsApps;C:\Program Files\JetBrains\GoLand 2019.1.3\bin;C:\Go\bin;C:\MinGW\bin;C:\Users\sdt\AppData\Local\BypassRuntm;C:\Users\sdt\AppData\Local\Microsoft\WindowsApps;E:\mysql-8.0.19-winx64\bin;C:\Program Files\JetBrains\IntelliJ IDEA 2019.2.3\bin;;;.]
+2020-05-26 17:36:21.572-[main] INFO  o.a.c.c.C.[.[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-05-26 17:36:21.572-[main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 906 ms
+2020-05-26 17:36:21.650-[main] INFO  c.z.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-05-26 17:36:21.712-[main] INFO  c.z.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020-05-26 17:36:21.744-[main] INFO  o.h.j.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-05-26 17:36:21.775-[main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.3.7.Final}
+2020-05-26 17:36:21.775-[main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2020-05-26 17:36:21.853-[main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2020-05-26 17:36:21.916-[main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-05-26 17:36:22.259-[main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-26 17:36:22.589-[main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-26 17:36:22.689-[main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+2020-05-26 17:36:22.746-[main] INFO  o.a.c.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9092"]
+2020-05-26 17:36:22.761-[main] INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat started on port(s): 9092 (http) with context path ''
+2020-05-26 17:36:22.763-[main] INFO  com.sdt.dapp.DappApplication - Started DappApplication in 2.331 seconds (JVM running for 2.975)
+2020-05-26 17:36:28.073-[http-nio-9092-exec-1] INFO  o.a.c.c.C.[.[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-26 17:36:28.074-[http-nio-9092-exec-1] INFO  o.s.w.s.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-05-26 17:36:28.078-[http-nio-9092-exec-1] INFO  o.s.w.s.DispatcherServlet - Completed initialization in 4 ms
+2020-05-26 17:36:34.387-[http-nio-9092-exec-7] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+2020-05-26 18:22:36.034-[Thread-2] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-05-26 18:22:36.034-[Thread-2] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-05-26 18:22:36.034-[Thread-2] INFO  c.z.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2020-05-26 18:22:36.034-[Thread-2] INFO  c.z.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2020-05-26 18:51:53.801-[main] INFO  com.sdt.dapp.DappApplication - Starting DappApplication on DESKTOP-7NFGT2P with PID 3656 (D:\javaProject\BankCertApp\target\classes started by sdt in D:\javaProject\BankCertApp)
+2020-05-26 18:51:53.848-[main] INFO  com.sdt.dapp.DappApplication - No active profile set, falling back to default profiles: default
+2020-05-26 18:51:54.489-[main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-05-26 18:51:54.535-[main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 46ms. Found 2 repository interfaces.
+2020-05-26 18:51:54.707-[main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$2ba1ef5b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-26 18:51:55.004-[main] INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port(s): 9092 (http)
+2020-05-26 18:51:55.004-[main] INFO  o.a.c.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9092"]
+2020-05-26 18:51:55.020-[main] INFO  o.a.c.core.StandardService - Starting service [Tomcat]
+2020-05-26 18:51:55.020-[main] INFO  o.a.c.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.16]
+2020-05-26 18:51:55.035-[main] INFO  o.a.c.c.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk-12.0.2\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Java\jdk-12.0.2\\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\IDM Computer Solutions\UltraEdit;C:\Program Files\Git\cmd;C:\Go\bin;C:\MinGW\bin;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;D:\goProject\src\protoc-3.9.0-win64\bin;C:\Program Files\VisualSVN Server\bin;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\MySQL\MySQL Server 5.5\bin;C:\openssl\bin;C:\Users\sdt\AppData\Local\Microsoft\WindowsApps;C:\Program Files\JetBrains\GoLand 2019.1.3\bin;C:\Go\bin;C:\MinGW\bin;C:\Users\sdt\AppData\Local\BypassRuntm;C:\Users\sdt\AppData\Local\Microsoft\WindowsApps;E:\mysql-8.0.19-winx64\bin;C:\Program Files\JetBrains\IntelliJ IDEA 2019.2.3\bin;;;.]
+2020-05-26 18:51:55.160-[main] INFO  o.a.c.c.C.[.[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-05-26 18:51:55.160-[main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1281 ms
+2020-05-26 18:51:55.238-[main] INFO  c.z.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-05-26 18:51:55.317-[main] INFO  c.z.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020-05-26 18:51:55.332-[main] INFO  o.h.j.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-05-26 18:51:55.363-[main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.3.7.Final}
+2020-05-26 18:51:55.363-[main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2020-05-26 18:51:55.457-[main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2020-05-26 18:51:55.598-[main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-05-26 18:51:56.113-[main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-26 18:51:56.457-[main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-26 18:51:56.551-[main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+2020-05-26 18:51:56.613-[main] INFO  o.a.c.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9092"]
+2020-05-26 18:51:56.629-[main] INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat started on port(s): 9092 (http) with context path ''
+2020-05-26 18:51:56.629-[main] INFO  com.sdt.dapp.DappApplication - Started DappApplication in 3.156 seconds (JVM running for 5.517)
+2020-05-26 18:52:18.709-[http-nio-9092-exec-1] INFO  o.a.c.c.C.[.[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-26 18:52:18.710-[http-nio-9092-exec-1] INFO  o.s.w.s.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-05-26 18:52:18.714-[http-nio-9092-exec-1] INFO  o.s.w.s.DispatcherServlet - Completed initialization in 4 ms
+2020-05-26 18:52:24.550-[http-nio-9092-exec-1] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+2020-05-26 18:59:00.857-[Thread-2] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-05-26 18:59:00.857-[Thread-2] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-05-26 18:59:00.857-[Thread-2] INFO  c.z.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2020-05-26 18:59:00.872-[Thread-2] INFO  c.z.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2020-05-26 18:59:03.403-[main] INFO  com.sdt.dapp.DappApplication - Starting DappApplication on DESKTOP-7NFGT2P with PID 3000 (D:\javaProject\BankCertApp\target\classes started by sdt in D:\javaProject\BankCertApp)
+2020-05-26 18:59:03.403-[main] INFO  com.sdt.dapp.DappApplication - No active profile set, falling back to default profiles: default
+2020-05-26 18:59:03.840-[main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-05-26 18:59:03.871-[main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 31ms. Found 2 repository interfaces.
+2020-05-26 18:59:04.059-[main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$8fbf7def] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-26 18:59:04.262-[main] INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port(s): 9092 (http)
+2020-05-26 18:59:04.278-[main] INFO  o.a.c.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9092"]
+2020-05-26 18:59:04.278-[main] INFO  o.a.c.core.StandardService - Starting service [Tomcat]
+2020-05-26 18:59:04.278-[main] INFO  o.a.c.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.16]
+2020-05-26 18:59:04.278-[main] INFO  o.a.c.c.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk-12.0.2\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Java\jdk-12.0.2\\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\IDM Computer Solutions\UltraEdit;C:\Program Files\Git\cmd;C:\Go\bin;C:\MinGW\bin;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;D:\goProject\src\protoc-3.9.0-win64\bin;C:\Program Files\VisualSVN Server\bin;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\MySQL\MySQL Server 5.5\bin;C:\openssl\bin;C:\Users\sdt\AppData\Local\Microsoft\WindowsApps;C:\Program Files\JetBrains\GoLand 2019.1.3\bin;C:\Go\bin;C:\MinGW\bin;C:\Users\sdt\AppData\Local\BypassRuntm;C:\Users\sdt\AppData\Local\Microsoft\WindowsApps;E:\mysql-8.0.19-winx64\bin;C:\Program Files\JetBrains\IntelliJ IDEA 2019.2.3\bin;;;.]
+2020-05-26 18:59:04.387-[main] INFO  o.a.c.c.C.[.[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-05-26 18:59:04.387-[main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 953 ms
+2020-05-26 18:59:04.465-[main] INFO  c.z.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-05-26 18:59:04.528-[main] INFO  c.z.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020-05-26 18:59:04.543-[main] INFO  o.h.j.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-05-26 18:59:04.590-[main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.3.7.Final}
+2020-05-26 18:59:04.590-[main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2020-05-26 18:59:04.668-[main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2020-05-26 18:59:04.746-[main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-05-26 18:59:05.074-[main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-26 18:59:05.416-[main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-26 18:59:05.517-[main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+2020-05-26 18:59:05.558-[main] INFO  o.a.c.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9092"]
+2020-05-26 18:59:05.574-[main] INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat started on port(s): 9092 (http) with context path ''
+2020-05-26 18:59:05.574-[main] INFO  com.sdt.dapp.DappApplication - Started DappApplication in 2.374 seconds (JVM running for 3.069)
+2020-05-26 18:59:15.288-[http-nio-9092-exec-1] INFO  o.a.c.c.C.[.[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-26 18:59:15.289-[http-nio-9092-exec-1] INFO  o.s.w.s.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-05-26 18:59:15.293-[http-nio-9092-exec-1] INFO  o.s.w.s.DispatcherServlet - Completed initialization in 4 ms
+2020-05-26 18:59:19.834-[http-nio-9092-exec-1] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+2020-05-26 19:07:13.779-[Thread-2] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-05-26 19:07:13.779-[Thread-2] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-05-26 19:07:13.779-[Thread-2] INFO  c.z.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2020-05-26 19:07:13.779-[Thread-2] INFO  c.z.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2020-05-26 19:07:17.240-[main] INFO  com.sdt.dapp.DappApplication - Starting DappApplication on DESKTOP-7NFGT2P with PID 11432 (D:\javaProject\BankCertApp\target\classes started by sdt in D:\javaProject\BankCertApp)
+2020-05-26 19:07:17.240-[main] INFO  com.sdt.dapp.DappApplication - No active profile set, falling back to default profiles: default
+2020-05-26 19:07:17.630-[main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-05-26 19:07:17.661-[main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 31ms. Found 2 repository interfaces.
+2020-05-26 19:07:17.849-[main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$3308c463] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-26 19:07:18.036-[main] INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port(s): 9092 (http)
+2020-05-26 19:07:18.052-[main] INFO  o.a.c.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9092"]
+2020-05-26 19:07:18.052-[main] INFO  o.a.c.core.StandardService - Starting service [Tomcat]
+2020-05-26 19:07:18.052-[main] INFO  o.a.c.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.16]
+2020-05-26 19:07:18.068-[main] INFO  o.a.c.c.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk-12.0.2\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Java\jdk-12.0.2\\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\IDM Computer Solutions\UltraEdit;C:\Program Files\Git\cmd;C:\Go\bin;C:\MinGW\bin;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;D:\goProject\src\protoc-3.9.0-win64\bin;C:\Program Files\VisualSVN Server\bin;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\MySQL\MySQL Server 5.5\bin;C:\openssl\bin;C:\Users\sdt\AppData\Local\Microsoft\WindowsApps;C:\Program Files\JetBrains\GoLand 2019.1.3\bin;C:\Go\bin;C:\MinGW\bin;C:\Users\sdt\AppData\Local\BypassRuntm;C:\Users\sdt\AppData\Local\Microsoft\WindowsApps;E:\mysql-8.0.19-winx64\bin;C:\Program Files\JetBrains\IntelliJ IDEA 2019.2.3\bin;;;.]
+2020-05-26 19:07:18.193-[main] INFO  o.a.c.c.C.[.[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-05-26 19:07:18.193-[main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 922 ms
+2020-05-26 19:07:18.286-[main] INFO  c.z.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-05-26 19:07:18.333-[main] INFO  c.z.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020-05-26 19:07:18.364-[main] INFO  o.h.j.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-05-26 19:07:18.396-[main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.3.7.Final}
+2020-05-26 19:07:18.396-[main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2020-05-26 19:07:18.474-[main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2020-05-26 19:07:18.536-[main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-05-26 19:07:18.864-[main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-26 19:07:19.161-[main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-26 19:07:19.239-[main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+2020-05-26 19:07:19.302-[main] INFO  o.a.c.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9092"]
+2020-05-26 19:07:19.317-[main] INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat started on port(s): 9092 (http) with context path ''
+2020-05-26 19:07:19.317-[main] INFO  com.sdt.dapp.DappApplication - Started DappApplication in 2.28 seconds (JVM running for 2.96)
+2020-05-26 19:07:28.754-[http-nio-9092-exec-1] INFO  o.a.c.c.C.[.[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-26 19:07:28.755-[http-nio-9092-exec-1] INFO  o.s.w.s.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-05-26 19:07:28.760-[http-nio-9092-exec-1] INFO  o.s.w.s.DispatcherServlet - Completed initialization in 5 ms
+2020-05-26 19:07:33.524-[http-nio-9092-exec-8] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+2020-05-26 19:09:49.652-[Thread-2] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-05-26 19:09:49.652-[Thread-2] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-05-26 19:09:49.652-[Thread-2] INFO  c.z.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2020-05-26 19:09:49.667-[Thread-2] INFO  c.z.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2020-05-26 19:09:52.229-[main] INFO  com.sdt.dapp.DappApplication - Starting DappApplication on DESKTOP-7NFGT2P with PID 9608 (D:\javaProject\BankCertApp\target\classes started by sdt in D:\javaProject\BankCertApp)
+2020-05-26 19:09:52.245-[main] INFO  com.sdt.dapp.DappApplication - No active profile set, falling back to default profiles: default
+2020-05-26 19:09:52.620-[main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-05-26 19:09:52.651-[main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 31ms. Found 2 repository interfaces.
+2020-05-26 19:09:52.854-[main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$729f9739] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-26 19:09:53.057-[main] INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port(s): 9092 (http)
+2020-05-26 19:09:53.057-[main] INFO  o.a.c.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9092"]
+2020-05-26 19:09:53.083-[main] INFO  o.a.c.core.StandardService - Starting service [Tomcat]
+2020-05-26 19:09:53.083-[main] INFO  o.a.c.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.16]
+2020-05-26 19:09:53.093-[main] INFO  o.a.c.c.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk-12.0.2\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Java\jdk-12.0.2\\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\IDM Computer Solutions\UltraEdit;C:\Program Files\Git\cmd;C:\Go\bin;C:\MinGW\bin;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;D:\goProject\src\protoc-3.9.0-win64\bin;C:\Program Files\VisualSVN Server\bin;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\MySQL\MySQL Server 5.5\bin;C:\openssl\bin;C:\Users\sdt\AppData\Local\Microsoft\WindowsApps;C:\Program Files\JetBrains\GoLand 2019.1.3\bin;C:\Go\bin;C:\MinGW\bin;C:\Users\sdt\AppData\Local\BypassRuntm;C:\Users\sdt\AppData\Local\Microsoft\WindowsApps;E:\mysql-8.0.19-winx64\bin;C:\Program Files\JetBrains\IntelliJ IDEA 2019.2.3\bin;;;.]
+2020-05-26 19:09:53.200-[main] INFO  o.a.c.c.C.[.[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-05-26 19:09:53.201-[main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 941 ms
+2020-05-26 19:09:53.300-[main] INFO  c.z.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-05-26 19:09:53.360-[main] INFO  c.z.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020-05-26 19:09:53.403-[main] INFO  o.h.j.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-05-26 19:09:53.434-[main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.3.7.Final}
+2020-05-26 19:09:53.435-[main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2020-05-26 19:09:53.533-[main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2020-05-26 19:09:53.613-[main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-05-26 19:09:54.023-[main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-26 19:09:54.329-[main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-26 19:09:54.416-[main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+2020-05-26 19:09:54.467-[main] INFO  o.a.c.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9092"]
+2020-05-26 19:09:54.481-[main] INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat started on port(s): 9092 (http) with context path ''
+2020-05-26 19:09:54.483-[main] INFO  com.sdt.dapp.DappApplication - Started DappApplication in 2.456 seconds (JVM running for 3.234)
+2020-05-26 19:09:59.070-[http-nio-9092-exec-1] INFO  o.a.c.c.C.[.[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-26 19:09:59.071-[http-nio-9092-exec-1] INFO  o.s.w.s.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-05-26 19:09:59.076-[http-nio-9092-exec-1] INFO  o.s.w.s.DispatcherServlet - Completed initialization in 5 ms
+2020-05-26 19:10:03.185-[http-nio-9092-exec-7] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+2020-05-26 19:38:57.550-[Thread-2] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-05-26 19:38:57.550-[Thread-2] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-05-26 19:38:57.565-[Thread-2] INFO  c.z.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2020-05-26 19:38:57.565-[Thread-2] INFO  c.z.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2020-05-26 19:39:05.611-[main] INFO  com.sdt.dapp.DappApplication - Starting DappApplication on DESKTOP-7NFGT2P with PID 6968 (D:\javaProject\BankCertApp\target\classes started by sdt in D:\javaProject\BankCertApp)
+2020-05-26 19:39:05.611-[main] INFO  com.sdt.dapp.DappApplication - No active profile set, falling back to default profiles: default
+2020-05-26 19:39:06.110-[main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-05-26 19:39:06.157-[main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 47ms. Found 2 repository interfaces.
+2020-05-26 19:39:06.345-[main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$75a00fd3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-26 19:39:06.548-[main] INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port(s): 9092 (http)
+2020-05-26 19:39:06.563-[main] INFO  o.a.c.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9092"]
+2020-05-26 19:39:06.579-[main] INFO  o.a.c.core.StandardService - Starting service [Tomcat]
+2020-05-26 19:39:06.579-[main] INFO  o.a.c.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.16]
+2020-05-26 19:39:06.579-[main] INFO  o.a.c.c.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk-12.0.2\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Java\jdk-12.0.2\\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\IDM Computer Solutions\UltraEdit;C:\Program Files\Git\cmd;C:\Go\bin;C:\MinGW\bin;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;D:\goProject\src\protoc-3.9.0-win64\bin;C:\Program Files\VisualSVN Server\bin;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\MySQL\MySQL Server 5.5\bin;C:\openssl\bin;C:\Users\sdt\AppData\Local\Microsoft\WindowsApps;C:\Program Files\JetBrains\GoLand 2019.1.3\bin;C:\Go\bin;C:\MinGW\bin;C:\Users\sdt\AppData\Local\BypassRuntm;C:\Users\sdt\AppData\Local\Microsoft\WindowsApps;E:\mysql-8.0.19-winx64\bin;C:\Program Files\JetBrains\IntelliJ IDEA 2019.2.3\bin;;;.]
+2020-05-26 19:39:06.688-[main] INFO  o.a.c.c.C.[.[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-05-26 19:39:06.688-[main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1046 ms
+2020-05-26 19:39:06.798-[main] INFO  c.z.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-05-26 19:39:06.860-[main] INFO  c.z.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020-05-26 19:39:06.891-[main] INFO  o.h.j.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-05-26 19:39:06.923-[main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.3.7.Final}
+2020-05-26 19:39:06.923-[main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2020-05-26 19:39:07.001-[main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2020-05-26 19:39:07.079-[main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-05-26 19:39:07.423-[main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-26 19:39:07.719-[main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-26 19:39:07.813-[main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+2020-05-26 19:39:07.860-[main] INFO  o.a.c.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9092"]
+2020-05-26 19:39:07.876-[main] INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat started on port(s): 9092 (http) with context path ''
+2020-05-26 19:39:07.876-[main] INFO  com.sdt.dapp.DappApplication - Started DappApplication in 2.5 seconds (JVM running for 3.178)
+2020-05-26 19:39:15.224-[http-nio-9092-exec-1] INFO  o.a.c.c.C.[.[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-26 19:39:15.225-[http-nio-9092-exec-1] INFO  o.s.w.s.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-05-26 19:39:15.230-[http-nio-9092-exec-1] INFO  o.s.w.s.DispatcherServlet - Completed initialization in 5 ms
+2020-05-26 19:39:21.563-[http-nio-9092-exec-10] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory

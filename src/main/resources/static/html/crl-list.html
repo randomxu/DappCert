@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>证书撤销管理</title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport"
+          content="width=device-width,user-scalable=yes, minimum-scale=0.4, initial-scale=0.8,target-densitydpi=low-dpi"/>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"/>
+    <link rel="stylesheet" href="../css/font.css">
+    <link rel="stylesheet" href="../css/xadmin.css">
+    <script src="../js/jquery.min.js"></script>
+    <script type="text/javascript" src="../lib/layui/layui.js" charset="utf-8"></script>
+    <script type="text/javascript" src="../js/xadmin.js"></script>
+    <!-- 让IE8/9支持媒体查询，从而兼容栅格 -->
+    <!--[if lt IE 9]>
+    <script src="https://cdn.staticfile.org/html5shiv/r29/html5.min.js"></script>
+    <script src="https://cdn.staticfile.org/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body class="layui-anim layui-anim-up">
+<div class="x-nav">
+      <span class="layui-breadcrumb">
+        <a href="">首页</a>
+        <a>
+          <cite>证书撤销管理</cite></a>
+      </span>
+    <a class="layui-btn layui-btn-primary layui-btn-small" style="line-height:1.6em;margin-top:3px;float:right"
+       href="javascript:location.replace(location.href);" title="刷新">
+        <i class="layui-icon" style="line-height:38px">刷新</i></a>
+</div>
+<div class="x-body">
+    <div class="demoTable">
+        <div class="layui-inline layui-row" style="margin-top:15px">
+            <form class="layui-form layui-col-md12 x-so">
+                <input type="text" id="startDate" name="startDate" placeholder="注册开始日" class="layui-input">
+                <input type="text" id="endDate" name="endDate" placeholder="注册截止日" class="layui-input">
+                <input type="text" id="userID" name="userID" placeholder="请输入用户ID" class="layui-input">
+                <input type="text" id="bankID" name="bankID" placeholder="请输入银行ID" class="layui-input">
+            </form>
+        </div>
+        <button class="layui-btn" data-type="reload">搜索</button>
+    </div>
+    <span class="x-right" style="line-height:40px">共有数据：<span id='total'></span> 条</span>
+    <table class="layui-table" id="dataTable" lay-filter="dataTable">
+        <script type="text/html" id="column-state">
+            {{# if(d.state =="1"){ }}
+            <span class="layui-btn layui-btn-sm">已撤销</span>
+            {{# } else if(d.state =="0"&& d.judge=="1"){ }}
+            <span class="layui-btn layui-btn-sm">已经过期</span>
+            {{# } else { }}
+            <span class="layui-btn layui-btn-sm">正在使用</span>
+            {{# } }}
+        </script>
+
+        <script type="text/html" id="column-toolbar">
+            {{# if(d.state =="0"){ }}
+            <span class="layui-btn layui-btn-sm" lay-event="revoke">撤销证书</span>
+            {{# } else { }}
+            <span class="layui-btn layui-btn-sm   layui-btn-disabled" aria-disabled="true">撤销证书</span>
+            {{# } }}
+        </script>
+    </table>
+</div>
+<script>
+    var json;
+    layui.config({
+        base: '/lib/layui/extend/'
+    }).extend({
+        formSelects: 'formSelects-v4'
+    }).use(['table', 'form', 'jquery', 'formSelects', 'laydate'], function () {
+        var table = layui.table;
+        var form = layui.form;
+        var $ = layui.$;
+        var isSubmit = false;
+        var laydate = layui.laydate;
+
+        //执行一个laydate实例
+        laydate.render({
+            elem: '#startDate' //指定元素
+        });
+
+        //执行一个laydate实例
+        laydate.render({
+            elem: '#endDate' //指定元素
+        });
+        table.render({
+            elem: '#dataTable',
+            url: '/YHRevoke/findAll/',
+            parseData: function (res) {
+                var result;
+                console.log('返回的值', res)
+                if (this.page.curr) {
+                    result = res.data.slice(this.limit * (this.page.curr - 1), this.limit * this.page.curr);
+                } else {
+                    result = res.data.slice(0, this.limit);
+                }
+                console.log('返回的值', result)
+                console.log('返回count', res.data.length);
+                console.log('返回时间', res.data)
+                return {
+                    "code": res.code,
+                    "msg": res.message,
+                    "data": result,
+                    "count": res.data.length
+                };
+            },
+            page: true,
+            toolbar: '#toolbarDemo',
+            smartReloadModel: true,
+            minWidth: 50,
+            cols: [
+                [
+                    {type: 'checkbox'},
+                    {field: 'id', title: '序号'},
+                    {field: 'userName', title: '用户姓名'},
+                    {field: 'userID', title: '身份证号'},
+                    {field: 'userPhone', title: '手机号'},
+                    {field: 'userBankID', title: '开户银行ID'},
+                    {
+                        field: 'userRegDate',
+                        title: '证书颁发时间',
+                        templet: "<div>{{layui.util.toDateString(d.userRegDate, 'yyyy-MM-dd HH:mm:ss')}}</div>"
+                    },
+                    {
+                        field: 'bankEndDate',
+                        title: '证书失效时间',
+                        templet: "<div>{{layui.util.toDateString(d.bankEndDate, 'yyyy-MM-dd HH:mm:ss')}}</div>"
+                    },
+                    {field: 'status', title: '状态', width: 120, align: 'center', templet: '#column-state'},
+                    {title: '操作', width: 100, align: 'center', templet: '#column-toolbar'},
+                ]
+            ],
+            id: 'testReload',
+            done: function (res, curr, count) {
+                $("#total").html(res.data.length);
+            }
+
+        });
+
+
+        //条件查找
+        var $ = layui.$, active = {
+            reload: function () {
+                //debugger;
+                var startTime = $('#startDate').val();
+                var endTime = $('#endDate').val();
+                var userID = $('#userID').val();
+                var bankID = $('#bankID').val();
+
+
+                //执行重载
+                table.reload('testReload', {
+                    url: '/YHRevoke/searchUser/',
+                    page: {
+                        limit: 10,
+                        curr: 1,
+                    },
+                    where: {
+                        startTime: startTime,
+                        endTime: endTime,
+                        userID: userID,
+                        userBankID: bankID,
+                    },
+                    parseData: function (res) {
+                        var result;
+                        if (this.page.curr) {
+                            result = res.data.slice(this.limit * (this.page.curr - 1), this.limit * this.page.curr);
+                        } else {
+                            result = res.data.slice(0, this.limit);
+                        }
+                        return {
+                            "code": res.code,
+                            "count": res.data.length,
+                            "data": result,
+                            "msg": res.message
+                        }
+                    },
+                }, 'data');
+            }
+        };
+
+        $('.demoTable .layui-btn').on('click', function () {
+            var type = $(this).data('type');
+            active[type] ? active[type].call(this) : '';
+        });
+
+
+        table.on('tool(dataTable)', function (obj) {
+            if (obj.event === 'revoke') {
+                var userName = obj.data.userName;
+                $.ajax({
+                    url: "/YHRevoke/revoke",//请求路径
+                    data: JSON.stringify({
+                        "userName": userName
+                    }),
+                    dataType: "json"
+                    , contentType: 'application/json'
+                    , method: 'post'
+                    , async: true
+                    , success: function (data) {
+                        if (data.code !== 0) {
+                            layer.alert(data.msg, {icon: 5, time: 3000}, function () {
+                            });
+                        } else {
+                            layer.msg('撤销成功', {icon: 6, time: 3000}, function () {
+                                window.location.reload();
+                            });
+                        }
+                    }
+                });
+            }
+        });
+    })
+</script>
+</body>
+
+</html>

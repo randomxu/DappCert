@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  
+  <head>
+    <meta charset="UTF-8">
+    <title>证书详情</title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,user-scalable=yes, minimum-scale=0.4, initial-scale=0.8,target-densitydpi=low-dpi" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="../css/font.css">
+    <link rel="stylesheet" href="../css/xadmin.css">
+    <script src="../js/jquery.min.js"></script>
+    <script type="text/javascript" src="../lib/layui/layui.js" charset="utf-8"></script>
+    <script type="text/javascript" src="../js/xadmin.js"></script>
+    <!-- 让IE8/9支持媒体查询，从而兼容栅格 -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.staticfile.org/html5shiv/r29/html5.min.js"></script>
+      <script src="https://cdn.staticfile.org/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  
+  <body>
+
+  <div class="x-body">
+      <form class="layui-form layui-form-pane" action="" style="margin-left:20px;margin-right:20px">
+          <div class="layui-form-item">
+              <label class="layui-form-label" style="width: 150px;">证书DN值</label>
+              <div class="layui-input-inline" style="width: 210px;">
+                  <input name="HASH" class="layui-input" type="text" id="certdn" style="width:700px" readonly>
+              </div>
+          </div>
+          <div class="layui-form-item">
+              <label class="layui-form-label" style="width: 150px;">签名证书</label>
+              <div class="layui-input-inline" style="width: 210px;">
+                  <input name="TXID" class="layui-input"  id="sigcert" type="text"  style="width:700px" readonly>
+              </div>
+          </div>
+          <div class="layui-form-item">
+              <label class="layui-form-label" style="width: 150px;">加密证书</label>
+              <div class="layui-input-inline" style="width: 210px;">
+                  <input name="HASH" class="layui-input" type="text" id="enccert" style="width:700px" readonly>
+              </div>
+          </div>
+          <div class="layui-form-item">
+              <label class="layui-form-label" style="width: 150px;">加密公钥</label>
+              <div class="layui-input-inline" style="width: 210px;">
+                  <input name="TXID" class="layui-input"  id="encpk" type="text"  style="width:700px" readonly>
+              </div>
+          </div>
+          <div class="layui-form-item">
+              <label class="layui-form-label" style="width: 150px;">加密私钥信封</label>
+              <div class="layui-input-inline" style="width: 210px;">
+                  <input name="HASH" class="layui-input" type="text" id="encskenv" style="width:700px" readonly>
+              </div>
+          </div>
+          <div class="layui-form-item">
+              <label class="layui-form-label" style="width: 150px;">签名申请</label>
+              <div class="layui-input-inline" style="width: 210px;">
+                  <input name="TXID" class="layui-input"  id="sigreq" type="text"  style="width:700px" readonly>
+              </div>
+          </div>
+      </form>
+  </div>
+  <script type="text/javascript">
+      $(document).ready(function(){
+          var parent_json=eval('('+parent.json+')');
+          console.log("bankID:",parent_json.bankID);
+          layui.use(['table', 'jquery','form'], function() {
+              var table = layui.table,
+                  $ = layui.jquery,
+                  form = layui.form;
+              //debugger;
+              $.ajax({
+                  url: "/YHBank/cerinfo",//请求路径
+                  data:
+                      JSON.stringify( {
+                          "bankID":parent_json.bankID,
+                      }),
+                  dataType: "json"
+                  , contentType: 'application/json'
+                  , type: 'post'
+                  , async: false
+                  , success: function (data) {
+                      console.log("data:",data);
+                      console.log("data.sigCert:",data.sigcert);
+                      document.getElementById("certdn").value = data.certdn;
+                      document.getElementById("sigcert").value = data.sigcert;
+                      document.getElementById("enccert").value = data.enccert;
+                      document.getElementById("encpk").value = data.encpk;
+                      document.getElementById("encskenv").value = data.encskenv;
+                      document.getElementById("sigreq").value = data.sigreq;
+                  }
+              });
+
+          });
+      });
+  </script>
+  </body>
+
+</html>
